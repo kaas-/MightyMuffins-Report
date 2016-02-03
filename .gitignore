@@ -1,0 +1,10 @@
+master.pdf
+*.out
+*.blg
+*.bbl
+*.aux
+*.xml
+*.toc
+*.thm
+*.tdo
+*.gz
