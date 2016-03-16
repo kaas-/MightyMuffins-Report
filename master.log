@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.2)  14 MAR 2016 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.2)  16 MAR 2016 13:02
 entering extended mode
 **master.tex
 (master.tex
@@ -1364,7 +1364,7 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 \titlepageleftcolumnwidth=\skip82
 \titlepagerightcolumnwidth=\skip83
 
-<figures/aau_logo_en.pdf, id=130, 115.43124pt x 77.28876pt>
+<figures/aau_logo_en.pdf, id=138, 115.43124pt x 77.28876pt>
 File: figures/aau_logo_en.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_en.pdf>
@@ -1398,7 +1398,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
 
-<figures/aau_logo_da.pdf, id=147, 121.45375pt x 77.28876pt>
+<figures/aau_logo_da.pdf, id=155, 121.45375pt x 77.28876pt>
 File: figures/aau_logo_da.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_da.pdf>
@@ -1499,7 +1499,7 @@ Chapter 5.
 
 ]
 Chapter 6.
-<./figures/Axis.png, id=289, 731.1315pt x 483.7272pt>
+<./figures/Axis.png, id=302, 731.1315pt x 483.7272pt>
 File: ./figures/Axis.png Graphic file (type png)
  <use ./figures/Axis.png>
 Package pdftex.def Info: ./figures/Axis.png used on input line 19.
@@ -1567,7 +1567,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: B7331A76E0D4EB5908C30B6BF8FEA6CF;1773.
+(rerunfilecheck)             Checksum: 0B5461B63D0714EEE942FE9BB07BC7C2;1901.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1575,13 +1575,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24632 strings out of 493673
- 442093 string characters out of 3141503
- 806077 words of memory out of 3000000
- 27361 multiletter control sequences out of 15000+200000
+ 24642 strings out of 493673
+ 442195 string characters out of 3141503
+ 807077 words of memory out of 3000000
+ 27366 multiletter control sequences out of 15000+200000
  49624 words of font info for 82 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 64i,14n,76p,1195b,2771s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,14n,76p,1180b,2771s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
 \MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecs
 s1000.pk> <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
@@ -1590,9 +1590,9 @@ ic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on master.pdf (39 pages, 226142 bytes).
+Output written on master.pdf (39 pages, 229146 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
