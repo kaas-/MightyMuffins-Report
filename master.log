@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  17 MAR 2016 17:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  17 MAR 2016 18:09
 entering extended mode
 **master.tex
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tex
@@ -1316,4 +1316,343 @@ LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
 
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.out)
-(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.out
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.out)
+\@outlinefile=\write5
+
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/frontpage.tex
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 22.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 22.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 22.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 22.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 22.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 22.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 22.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 22.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 22.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 22.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 29.
+ [1
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/colophon.tex
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 5.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 5.
+
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 5.
+
+[2
+
+])
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/titlepages.tex
+\titlepageleftcolumnwidth=\skip82
+\titlepagerightcolumnwidth=\skip83
+
+<figures/aau_logo_en.pdf, id=142, 115.43124pt x 77.28876pt>
+File: figures/aau_logo_en.pdf Graphic file (type pdf)
+
+<use figures/aau_logo_en.pdf>
+Package pdftex.def Info: figures/aau_logo_en.pdf used on input line 36.
+(pdftex.def)             Requested size: 194.59193pt x 130.30179pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 36.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 36.
+
+Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
+[] 
+ []
+
+[3
+
+ <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/aau_logo_en.pdf
+>] [4
+
+
+
+] <figures/aau_logo_da.pdf, id=159, 121.45375pt x 77.28876pt>
+File: figures/aau_logo_da.pdf Graphic file (type pdf)
+
+<use figures/aau_logo_da.pdf>
+Package pdftex.def Info: figures/aau_logo_da.pdf used on input line 70.
+(pdftex.def)             Requested size: 194.59193pt x 123.8308pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+
+ []
+
+
+Overfull \hbox (3.18648pt too wide) in paragraph at lines 70--70
+[] 
+ []
+
+[5 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/aau_logo_da.p
+df>]) [6
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 32.
+ (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.toc
+[7
+
+
+])
+\tf@toc=\write6
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tdo)
+\tf@tdo=\write7
+
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/glossary.tex
+[9
+
+
+] [10
+
+
+])
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/preface.tex
+[11] [12
+
+
+]) [13] [14
+
+
+]
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/introduction.te
+x
+Chapter 1.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 3.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/initialproblem.
+tex [1
+
+
+] [2
+
+
+]
+Chapter 2.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 9.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/backgroundresea
+rch.tex [3] [4
+
+
+]
+Chapter 3.
+<./figures/image_to_sound.png, id=285, 433.62pt x 278.54062pt>
+File: ./figures/image_to_sound.png Graphic file (type png)
+
+<use ./figures/image_to_sound.png>
+Package pdftex.def Info: ./figures/image_to_sound.png used on input line 19.
+(pdftex.def)             Requested size: 401.18387pt x 257.71828pt.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 20.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5]
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/image_to_soun
+d.png>])
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/userneedsstudy.
+tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] [8
+
+
+]
+Chapter 4.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/finalproblem.te
+x [9] [10
+
+
+]
+Chapter 5.
+) (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/design.tex
+[11] [12
+
+
+]
+Chapter 6.
+[13] <./figures/Axis.png, id=330, 731.1315pt x 483.7272pt>
+File: ./figures/Axis.png Graphic file (type png)
+
+<use ./figures/Axis.png>
+Package pdftex.def Info: ./figures/Axis.png used on input line 23.
+(pdftex.def)             Requested size: 401.18387pt x 265.42339pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/Axis.png>])
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/implementation.
+tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] [16
+
+
+]
+Chapter 7.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/codeoverview.te
+x [17] [18
+
+
+]
+Chapter 8.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/finalprototype.
+tex [19] [20
+
+
+]
+Chapter 9.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/evaluation.tex
+[21] [22
+
+
+]
+Chapter 10.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/discussion.tex
+[23] [24
+
+
+]
+Chapter 11.
+)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/conclusion.tex
+[25] [26
+
+
+]
+Chapter 12.
+)
+
+LaTeX Warning: Empty bibliography on input line 51.
+
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/appAname.tex
+[27] [28
+
+
+]
+Appendix A.
+)
+\tf@thm=\write8
+ 
+AED: lastpage setting LastPage
+[29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+ (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package rerunfilecheck Info: File `master.out' has not changed.
+(rerunfilecheck)             Checksum: CF9550CE92DB4AD428132E539CFB47ED;1969.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'master.run.xml'.
+ ) 
+Here is how much of TeX's memory you used:
+ 24627 strings out of 493921
+ 444982 string characters out of 3144873
+ 801239 words of memory out of 3000000
+ 27291 multiletter control sequences out of 15000+200000
+ 49624 words of font info for 82 fonts, out of 3000000 for 9000
+ 846 hyphenation exceptions out of 8191
+ 64i,14n,77p,895b,2757s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
+\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
+> <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (43 pages, 313288 bytes).
+PDF statistics:
+ 486 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+
