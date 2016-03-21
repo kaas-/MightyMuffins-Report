@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  17 MAR 2016 18:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  21 MAR 2016 10:09
 entering extended mode
 **master.tex
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tex
@@ -1507,10 +1507,10 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Marginpar on page 5 moved.
+
 [5]
-
-LaTeX Warning: Marginpar on page 6 moved.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1518,7 +1518,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/image_to_soun
-d.png>])
+d.png>] <./figures/tanakaresynthesis.png, id=298, 328.22626pt x 212.795pt>
+File: ./figures/tanakaresynthesis.png Graphic file (type png)
+
+<use ./figures/tanakaresynthesis.png>
+Package pdftex.def Info: ./figures/tanakaresynthesis.png used on input line 41.
+
+(pdftex.def)             Requested size: 401.18387pt x 260.0998pt.
+
+<./figures/tanakainterfacepreview.png, id=299, 332.24126pt x 197.73875pt>
+File: ./figures/tanakainterfacepreview.png Graphic file (type png)
+
+<use ./figures/tanakainterfacepreview.png>
+Package pdftex.def Info: ./figures/tanakainterfacepreview.png used on input lin
+e 51.
+(pdftex.def)             Requested size: 401.18387pt x 238.78488pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/tanakaresynth
+esis.png>])
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/userneedsstudy.
 tex
 
@@ -1527,14 +1553,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] [8
-
-
-]
+[8 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/tanakainterfa
+cepreview.png>]
 Chapter 4.
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/finalproblem.te
-x [9] [10
+x [9
+
+
+] [10
 
 
 ]
@@ -1545,7 +1572,7 @@ Chapter 5.
 
 ]
 Chapter 6.
-[13] <./figures/Axis.png, id=330, 731.1315pt x 483.7272pt>
+[13] <./figures/Axis.png, id=337, 731.1315pt x 483.7272pt>
 File: ./figures/Axis.png Graphic file (type png)
 
 <use ./figures/Axis.png>
@@ -1633,26 +1660,41 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24627 strings out of 493921
- 444982 string characters out of 3144873
- 801239 words of memory out of 3000000
- 27291 multiletter control sequences out of 15000+200000
+ 24651 strings out of 493921
+ 445560 string characters out of 3144873
+ 800239 words of memory out of 3000000
+ 27307 multiletter control sequences out of 15000+200000
  49624 words of font info for 82 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
  64i,14n,77p,895b,2757s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
-\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
-> <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (43 pages, 313288 bytes).
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.19} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.11} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\V
+ictor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk> 
+<C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+sx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (43 pages, 527112 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
