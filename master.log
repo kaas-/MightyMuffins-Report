@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.2)  23 MAR 2016 09:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.13)  23 MAR 2016 10:38
 entering extended mode
 **master.tex
 (master.tex
@@ -1349,11 +1349,10 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
 
 
 
-{C:/Users/MarkusKristian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-(sections/colophon.tex
+{C:/Users/Anna/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) (sections/c
+olophon.tex
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 5.
 LaTeX Font Info:    No file OMSpplx.fd. on input line 5.
-
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead on input line 5.
@@ -1638,21 +1637,20 @@ Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  24827 strings out of 493673
- 445769 string characters out of 3141503
+ 445769 string characters out of 3141532
  807077 words of memory out of 3000000
  27526 multiletter control sequences out of 15000+200000
  51685 words of font info for 85 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
  64i,14n,76p,895b,2771s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
-\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecs
-s1000.pk> <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pa
-latino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/u
-plr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.p
-fb>
-Output written on master.pdf (47 pages, 534300 bytes).
+\Anna\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk> 
+<C:\Users\Anna\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx
+1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (47 pages, 534303 bytes).
 PDF statistics:
  530 PDF objects out of 1000 (max. 8388607)
  109 named destinations out of 1000 (max. 500000)
