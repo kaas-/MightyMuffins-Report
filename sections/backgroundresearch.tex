@@ -54,15 +54,25 @@ This visualisation of sound through images shows dynamic functionality of a inte
 
 \section{Methods used to evaluate}\label{sub:methodsusedtoevaluate}
 
+To produce a successful system which utilises signal inputs from an image, the theories for signal processing must be defined and discussed to gain knowledge of different varieties. This chapter will go through linear systems and non-linear systems and chosen methods. 
+
 \subsection{Volterra series}\label{sub:Volt}
 
 \todo{look through this with Victor}
+- Hvad er non-linear systems (eksempler
+- Hvad er volterra series (eksempler)
+- Hvordan kan vi anvende det?
 
-The Volterra series is an extension of the linear systems theory, which uses linear operators in signal processing \todo{add reference to linear systems theory}. The Volterra series can calculate the high-frequency-low-distortion terms for any weakly non-linear time-invariant (NLTI) system with memory effect.  The input and output signals allow the calculation of the linear impulse response defined as h_1(n) by cross-correlation and kernels (impulse responses). The linear impulse response has many variations defined as h_1(n) in a one-dimensional or a two-dimensional h_2(n_1, n_2) and h_N(n_1, n_2,.., n_N) is an N-dimensional kernel. The N-kernels can be used for an N-order Volterra system model. 
+The volterra series is a non-linear theory which extense on the linear systems theory. In non-linear systems, the output signal is shaped by the nonlinearity and consists of a sum of harmonics or a sum of sinusoids. This can be seen as an example in figure \todo {sæt figur ind fra DAFX side 102}   
+
+
+Many non-linear systems works with many different analog audio processing devices such as valve amplifieres, analog effect devices, analog tape recorders, loudspeakers and the human hearing mechanism \todo{ref the book DAFX}.         
+
+The Volterra series can calculate the high-frequency-low-distortion terms for any weakly non-linear time-invariant (NLTI) system with memory effect. The input and output signals allow the calculation of the linear impulse response defined as $h_1(n)$ by cross-correlation and kernels (impulse responses). The linear impulse response has many variations defined as $h_1(n)$ in a one-dimensional or a two-dimensional $h_2(n_1, n_2)$ and $h_N(n_1, n_2,.., n_N)$ is an N-dimensional kernel. The N-kernels can be used for an N-order Volterra system model. 
 
 \todo{Add functionen i bogen}
 
-However, the Volterra series has a hard time with strongly non-linear problems where the sum will go in different directions and therefore difficult to determinate. 
+However, the Volterra series has a hard time with extreme non-linear problems where the sum will go in different directions and therefore difficult to determinate. 
 
 
 \section{State of the art}\label{sec:stateart}
