@@ -30,7 +30,7 @@ The paper describes two processing methods that both converts images into sound.
 
 The first method utilises two image series. The method used to create the sound from the image uses a temporary mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produces high notes and a dark pixel produces a low note \cite{Tanaka2012}.
 
-The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic were mapped in which the key notes are played one at a time. The images were projected with negative pixel values creating a inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
+The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time.  The images were projected with negative pixel values creating a inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
 
 \begin{figure}[!h]
 \centering
@@ -71,18 +71,6 @@ https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/using-a-spectro
 !
 
 !Tænker at det her er meget en introduktion til camillas!
-
-
-\subsection{Volterra series}\label{sub:Volt}
-
-The volterra series is a non-linear theory which extense on the linear systems theory. In non-linear systems, the output signal is shaped by the nonlinearity and consists of a sum of harmonics or a sum of sinusoids. This can be seen as an example in figure \todo {sæt figur ind fra DAFX side 102}   
-
-
-Many non-linear systems works with many different analog audio processing devices such as valve amplifieres, analog effect devices, analog tape recorders, loudspeakers and the human hearing mechanism \todo{ref the book DAFX}.         
-
-The Volterra series can calculate the high-frequency-low-distortion terms for any weakly non-linear time-invariant (NLTI) system with memory effect. The input and output signals allow the calculation of the linear impulse response defined as $h_1(n)$ by cross-correlation and kernels (impulse responses). The linear impulse response has many variations defined as $h_1(n)$ in a one-dimensional or a two-dimensional $h_2(n_1, n_2)$ and $h_N(n_1, n_2,.., n_N)$ is an N-dimensional kernel. The N-kernels can be used for an N-order Volterra system model. 
-
-However, the Volterra series has a hard time with extreme non-linear problems where the sum will go in different directions and therefore difficult to determinate. 
 
 
 \section{State of the art}\label{sec:stateart}
