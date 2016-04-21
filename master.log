@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  29 MAR 2016 15:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  21 APR 2016 13:56
 entering extended mode
 **master.tex
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tex
@@ -1206,7 +1206,13 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count308
 \@quotereset=\count309
-(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.aux)
+(C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.aux
+Package biblatex Info: Trying to load language 'danish'...
+Package biblatex Info: ... file 'danish.lbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\danish.lbx"
+File: danish.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
@@ -1396,10 +1402,6 @@ File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 36.
 
-
-LaTeX Warning: Reference `LastPage' on page iii undefined on input line 36.
-
-
 Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
 [] 
  []
@@ -1411,12 +1413,7 @@ Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
 
 
 
-]
-Package biblatex Info: Trying to load language 'danish'...
-Package biblatex Info: ... file 'danish.lbx' found.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\danish.lbx"
-File: danish.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
-) <figures/aau_logo_da.pdf, id=165, 121.45375pt x 77.28876pt>
+] <figures/aau_logo_da.pdf, id=167, 121.45375pt x 77.28876pt>
 File: figures/aau_logo_da.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_da.pdf>
@@ -1426,9 +1423,6 @@ Package pdftex.def Info: figures/aau_logo_da.pdf used on input line 70.
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page v undefined on input line 70.
 
 
 Overfull \hbox (3.18648pt too wide) in paragraph at lines 70--70
@@ -1443,24 +1437,27 @@ df>]) [6
 ]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 32.
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
-\tf@toc=\write6
+ (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.toc
 [7
 
 
-] [8
+])
+\tf@toc=\write6
 
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-Package hyperref Warning: old tdo file detected, not used; run LaTeX again.
-
+[8] (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tdo)
 \tf@tdo=\write7
+
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/glossary.tex
-[9] [10
+[9
+
+
+] [10
 
 
 ])
@@ -1501,11 +1498,7 @@ Chapter 3.
 
 LaTeX Warning: Citation 'Meijer1992' on page 5 undefined on input line 11.
 
-
-LaTeX Warning: Reference `fig:image_to_sound' on page 5 undefined on input line
- 13.
-
-<./figures/image_to_sound.png, id=233, 346.896pt x 205.36725pt>
+<./figures/image_to_sound.png, id=286, 346.896pt x 205.36725pt>
 File: ./figures/image_to_sound.png Graphic file (type png)
 
 <use ./figures/image_to_sound.png>
@@ -1525,14 +1518,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
 
+LaTeX Warning: Citation 'Tanaka2012' on page 6 undefined on input line 25.
+
+
 LaTeX Warning: Citation 'Tanaka2012' on page 6 undefined on input line 27.
-
-
-LaTeX Warning: Citation 'Tanaka2012' on page 6 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig:tanakaresynthesis' on page 6 undefined on input l
-ine 33.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1541,40 +1530,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/image_to_soun
-d.png>] <./figures/tanakaresynthesis.png, id=246, 328.22626pt x 212.795pt>
+d.png>] <./figures/tanakaresynthesis.png, id=302, 328.22626pt x 212.795pt>
 File: ./figures/tanakaresynthesis.png Graphic file (type png)
 
 <use ./figures/tanakaresynthesis.png>
-Package pdftex.def Info: ./figures/tanakaresynthesis.png used on input line 37.
+Package pdftex.def Info: ./figures/tanakaresynthesis.png used on input line 33.
 
 (pdftex.def)             Requested size: 401.18387pt x 260.0998pt.
 
 
-LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 38.
+LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 34.
 
 
-LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 38.
+LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 34.
 
-
-LaTeX Warning: Reference `fig:tanakainterfacepreview' on page 7 undefined on in
-put line 41.
-
-<./figures/tanakainterfacepreview.png, id=247, 332.24126pt x 197.73875pt>
+<./figures/tanakainterfacepreview.png, id=304, 332.24126pt x 197.73875pt>
 File: ./figures/tanakainterfacepreview.png Graphic file (type png)
 
 <use ./figures/tanakainterfacepreview.png>
 Package pdftex.def Info: ./figures/tanakainterfacepreview.png used on input lin
-e 45.
+e 41.
 (pdftex.def)             Requested size: 401.18387pt x 238.78488pt.
 
 
-LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 46.
+LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 42.
 
 
-LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 46.
+LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 42.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (33.618pt too wide) in paragraph at lines 55--56
+\T1/pplx/m/n/10.95 https://www.izotope.com/en/community/blog/tips-tutorials/201
+4/09/understanding-
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1584,6 +1575,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/tanakaresynth
 esis.png>]
+! You can't use `macro parameter character #' in horizontal mode.
+l.57 https://en.wikipedia.org/wiki/Spectrogram#
+                                               cite_note-1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.57 ...://en.wikipedia.org/wiki/Spectrogram#cite_
+                                                  note-1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Marginpar on page 8 moved.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1592,43 +1610,95 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/tanakainterfa
 cepreview.png>]
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p
+l.74 \includegraphics[width=1]\textwidth
+                                        {MathFourier}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 73.
 
-<./figures/sonicphoto.png, id=263, 569.12625pt x 360.59718pt>
+! Package pdftex.def Error: File `\textwidth .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \includegraphics[width=1]\textwidth
+                                        {MathFourier}
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.74 \includegraphics[width=1]\textwidth
+                                        {MathFourier}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.74 \includegraphics[width=1]\textwidth
+                                        {MathFourier}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 74.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 86.
+
+<./figures/sonicphoto.png, id=320, 569.12625pt x 360.59718pt>
 File: ./figures/sonicphoto.png Graphic file (type png)
 
 <use ./figures/sonicphoto.png>
-Package pdftex.def Info: ./figures/sonicphoto.png used on input line 77.
+Package pdftex.def Info: ./figures/sonicphoto.png used on input line 90.
 (pdftex.def)             Requested size: 401.18387pt x 254.19904pt.
 
 
-LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 78.
+LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 91.
 
 
-LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 78.
+LaTeX Warning: Citation 'White2013' on page 9 undefined on input line 91.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/sonicphoto.pn
-g>] <./figures/metasynth.png, id=270, 853.68938pt x 424.58624pt>
+<./figures/metasynth.png, id=321, 853.68938pt x 424.58624pt>
 File: ./figures/metasynth.png Graphic file (type png)
 
 <use ./figures/metasynth.png>
-Package pdftex.def Info: ./figures/metasynth.png used on input line 89.
+Package pdftex.def Info: ./figures/metasynth.png used on input line 102.
 (pdftex.def)             Requested size: 401.18387pt x 199.53612pt.
 
 
-LaTeX Warning: Citation 'UISoftware2014' on page 10 undefined on input line 90.
+LaTeX Warning: Citation 'UISoftware2014' on page 9 undefined on input line 103.
 
 
 
-LaTeX Warning: Citation 'UISoftware2014' on page 10 undefined on input line 90.
+LaTeX Warning: Citation 'UISoftware2014' on page 9 undefined on input line 103.
 
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/userneedsstudy.
@@ -1639,7 +1709,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/metasynth.pn
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/sonicphoto.p
+ng> <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/metasynth.pn
 g>]
 Chapter 4.
 )
@@ -1658,15 +1736,12 @@ Chapter 5.
 
 ]
 Chapter 6.
-[15] <./figures/Axis.png, id=305, 731.1315pt x 483.7272pt>
+[15] <./figures/Axis.png, id=362, 731.1315pt x 483.7272pt>
 File: ./figures/Axis.png Graphic file (type png)
 
 <use ./figures/Axis.png>
 Package pdftex.def Info: ./figures/Axis.png used on input line 23.
 (pdftex.def)             Requested size: 401.18387pt x 265.42339pt.
-
-
-LaTeX Warning: Reference `fig:axis' on page 16 undefined on input line 32.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1735,11 +1810,7 @@ LaTeX Warning: Empty bibliography on input line 51.
 Appendix A.
 )
 \tf@thm=\write8
-
-
-Package lastpage Warning: Rerun to get the references right on input line 55.
-
-
+ 
 AED: lastpage setting LastPage
 [31]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
@@ -1747,9 +1818,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 09FF558950FCDAC245F9C47F305C739F;2114.
 
+
+Package rerunfilecheck Warning: File `master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master.out':
+(rerunfilecheck)             Before: 09FF558950FCDAC245F9C47F305C739F;2114
+(rerunfilecheck)             After:  5421547308F4864CF4B93F3FF2C4E87B;2193.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1767,24 +1844,36 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24728 strings out of 493921
- 446579 string characters out of 3144873
- 767600 words of memory out of 3000000
- 27381 multiletter control sequences out of 15000+200000
- 53629 words of font info for 90 fonts, out of 3000000 for 9000
+ 24794 strings out of 493921
+ 448266 string characters out of 3144873
+ 795239 words of memory out of 3000000
+ 27430 multiletter control sequences out of 15000+200000
+ 53900 words of font info for 91 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
- 64i,14n,77p,895b,1880s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
-\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
-> <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (45 pages, 971257 bytes).
+ 64i,14n,77p,895b,2757s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{figure.caption.6} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.15} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+ <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+ctt1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} 
+<C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+ss1000.pk> <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/
+uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (45 pages, 981335 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
