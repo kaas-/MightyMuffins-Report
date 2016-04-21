@@ -1,87 +1,100 @@
 %!TEX root = ../master.tex
 \chapter{Background Research}\label{ch:bgresearch}
 
-
-
-\section{Types of sources}\label{sec:typesofsources} 
-The sources used in this chapter include scientific articles regarding the topic “Image to sound conversion”. The articles are published in the fields of physics, sound art and digital media. Other sources include recorded lectures of one of the articles authors.
+\section{Types of Sources}\label{sec:typesofsources} 
+The sources used in this chapter include scientific articles regarding the topic “Image to sound conversion”. The articles are published in the fields of physics, sound art and digital media. \todo{Den næste linje skal fjernes hvis vi ikke anvender den} Other sources includes recorded lectures of one of the articles authors.
 
 \section{Previous work}\label{sec:previouswork}
 
-\subsection{An experimental system for auditory image representation}\label{sec:experimentalsystem}
+\subsection{An Experimental System for Auditory Image Representation}\label{sec:experimentalsystem}
 
-To interpret an image, human are naturally equipped with visual sense. However, if the visual sense is missing for an individual, the visual image is not perceivable. This allows for a technical replacement which can provide the individual with a tool to substitute the missing sense or enhance other senses which is still functional. An experimental system for vision substitution was developed by Peter B. L. Meijer. The system consists of a computer connected to a camera, which records real-time images and converts them into sound. 
+To interpret an image, humans are naturally born with visual senses. However, if the visual sense is missing for an individual, the visual image is not perceivable. This allows for a technical replacement which can provide the individual with a tool to substitute the missing sense or enhance other senses which are still functional. An experimental system for vision substitution was developed by Peter B. L. Meijer\cite{Meijer1992}. The system consists of a computer connected to a camera, which records real-time images and converts them into sound. 
 
-The system used a method called time-multiplexed mapping, where the distribution of rows and columns in an image, the height (M) and width (N) respectively, where the pixels are stored in a matrix. The time spent scanning the image(R) is used to define when the current image ends and the next image begins. An example of this method is seen in figure \todo{Add reference}. 
+The system used a method called time-multiplexed mapping, where the distribution of rows and columns in an image, the height (M) and width (N) respectively, where the pixels are stored in a matrix. The time spent scanning the image(R) is used to define when the current image ends and the next image begins. The images have a resolution of 64 * 64 pixels with 16 gray-tones per pixels. An example of this method is seen in Figure  \ref{fig:image_to_sound}. 
 
 \begin{figure}[!h] 
 \centering
 \includegraphics[width=1\textwidth]{image_to_sound}
-\caption{\label{fig:image_to_sound}}
+\caption{\label{fig:image_to_sound} Principles of the image-to-sound mapping \cite{Meijer1992}}
 \end{figure}
-
-\todo{add reference}
   
-The images have a resolution of 64 * 64 pixels with 16 gray-tones per pixels.  
-
-The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proved. This questions the reliability of the system since there is no recordings of testing data presented in the article of the experiment. However theory supports the system's functionality.  \todo{talk about the math can be used in other projects and be build upon}
+The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. The operations used in the system can also be applied in other settings than an aid for blind individuals, as these operations are mathematical expressions. They are therefore not limited to the use intended by Meijer.
 
 \subsection{The Sound of Photographic Image}\label{sec:soundarticle}
 
-A use of images for conversion into sound was performed and described in a paper by Atau Tanaka, who is the chair of digital media and director of culture lab at Newcastle University.
+A use of images for conversion into sound was performed and described in a paper by Atau Tanaka, who is the chair of digital media and director of culture lab at Newcastle University \cite{Tanaka2012}. The paper describes two processing methods that both converts images into sound.
 
-The paper describes two processing methods that both converts images into sound.
+The first method utilised two image series. The method used to create the sound from the image uses a temporary mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produced high notes and a dark pixel produced a low note \cite{Tanaka2012}.
 
-The first method utilises two image series. The method used to create the sound from the image uses a temporary mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produces high notes and a dark pixel produces a low note. \todo{Ref. paper Tanaka}
-
-The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic were mapped in which the key notes are played one at a time. The images were projected with negative pixel values creating a inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in the Figure below.  
+The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time. The images were projected with negative pixel values creating a inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{tanakaresynthesis}
-\caption{\label{fig:tanakaresynthesis}}
+\caption{\label{fig:tanakaresynthesis}\cite{Tanaka2012}}
 \end{figure}
 
-\todo{ref to figure}
-
-To capture human interaction, an infrared camera on top of the installation used viewers silhouettes as a layer on the negative image which was used to reveal the original black and white image for the viewer, as seen in Figure 6.
+To capture human interaction, an infrared camera on top of the installation used viewers silhouettes as a layer on the negative image which was used to reveal the original black and white image for the viewer, as seen in Figure \ref{fig:tanakainterfacepreview}.
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{tanakainterfacepreview}
-\caption{\label{fig:tanakainterfacepreview}}
+\caption{\label{fig:tanakainterfacepreview}\cite{Tanaka2012}}
 \end{figure}
-
-\todo{ref to figure}
 
 This interaction also affected the produced sound which were based on the brightness of the processed image and thus produced new sounds. 
 
-This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprossed image. However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.   
- 
+This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.   
 
 \section{Methods used to evaluate}\label{sub:methodsusedtoevaluate}
 
+To produce a successful system which utilises signal inputs from an image, the theories for signal processing must be defined and discussed to gain knowledge of different varieties. This chapter will go through sound analysis methods and chosen filters for this project. 
+
+\subsection{Spectrogram}\label{sub:spectrogram}
+
+https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/understanding-spectrograms/
+
+https://en.wikipedia.org/wiki/Spectrogram#cite_note-1
+
+A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a 2-dimensional or 3-dimensional coordinate system. A 2-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
+
+An image has also parameters such as the amplitude and magnitude provided through greyscaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a 3D spectrogram.
+
+\todo {Hvad kan vi bruge det til - relateret til vores project} 
+
+!Tænker at det her er meget en introduktion til camillas!
+
+\subsection{Fourier transformation}\label{sub:fourier}
+
+To utilise a given signal the Fourier transform can take a given signal and break it down into smaller pieces. A given signal could be a time-based pattern, as given in a signal, and return the overall cycle by applying filters which measure individual properties upon request and returns the amount of each property and list them. 
+
+This process has its values since it simplifies the signal by separating the important parts such as frequency which then can be boosted and neglect unwanted properties.       
+
+\todo {Jeg ved ikke med det her eksempel. Ville være bedre at skrive et matematisk eksempel.}An example of this is a finished smoothie, the smoothie goes through a filter where each individual fruit gets sorted out and shows how much "space" the fruit takes up in the smoothie (indsæt illustration fra artikel). Every fruits is equals to a filter, all filters must be separated. 
 
 \section{State of the art}\label{sec:stateart}
+In this project, software that allows images to be converted into sounds are to be considered as the state of the art, as they are closely related to the topic of the project.
 
-\subsection{Sonic Photo}\label{sub:sonic}
-\todo{make into reference}
-Can be found here: http://www.skytopia.com/software/sonicphoto/
-!Anna rewritten!
-In this project, software that allows images to be converted into sounds are to be considered as the state of the art, as they are closely related to the topic of the project. 
-Sonic Photo is a free software that allows a user to input an image and converts it into a unique sounds. It !not done!
+\subsection{SonicPhoto}\label{sub:sonic}
+SonicPhoto \cite{White2013} is a commercial piece of software developed for windows that allows a user to input an image and converts it into unique sounds. The software interprets the image as a spectrogram, having pitch on the y-axis and time on the x-axis. The intensity of the pixels is interpreted as the amplitude of the sound. 
 
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{sonicphoto}
+\caption{\label{fig:sonicphoto} Interface of SonicPhoto \cite{White2013}}
+\end{figure}
 
-
-
-!Markus!
-There are a lot of different kinds of software that allow for image to sound conversion, in this project these kind of software will be considered state of the art, as they are closely related the the topic of the project. And as it has some of the functionality that are considered to be added in the project.
-
-
-Sonic photo is a free software that allows a user to input an image and convert it into sound, which can then be used for many different kind of things. It could be used by sound artists or painters to create unique sounds.
-
-Sonic photo has many features and interface designs which are relevant to the project, which could help shape and otherwise affect the design of the project.
-Sonic photo is a program that allows the user to transform an image into sound. The user can load an image into the program, and adjust various parameters to modify the resulting audio. The parameters include  frequency(Hz), brightness, tone, harmony quantization, etc.
+The software allows for customisation, such as being able to change the note harmonics, which cord nodes are played, the base of the pitch, the lowest and highest frequencies. It is also possible to edit the image; changing the alpha, rotation, flipping it on the x or y-axis, and inverting the colours. 
 
 
-\todo{more general information about the program. Which points to we want to make, by writing about this program?}
+\subsection{MetaSynth}\label{sub:metasynth}
+MetaSynth, a software for OSX, is also an image-to-sound conversion software. It resembles SonicPhoto by being able to import an image and edit it by for example flipping, rotating, adjusting gamma, blurring. However, MetaSynth has additional functionality for editing the output sound, as the user can add effects like  convolution, grain, delay, reverb, and chorus. The image is interpreted as a spectrogram by the software.
+
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{metasynth}
+\caption{\label{fig:metasynth} Interface of MetaSynth \cite{UISoftware2014}}
+\end{figure}
+
+There is also the possibility to draw freely on an image, while still having all the previously mentioned customisation for both image and sound. In this software, the color of the image determines the stereo placement. Green color for the right stereo, red for the left stereo and yellow in the center. Intensity determines the amplitude. 
+Compared to SonicPhoto, MetaSynth emphasises on making music in addition to just making sounds. This is because the program allows for adding or putting the audio that the user has created into a sequence to create longer soundtracks.
