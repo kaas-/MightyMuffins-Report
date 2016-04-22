@@ -2,7 +2,7 @@
 \chapter{Background Research}\label{ch:bgresearch}
 
 \section{Types of Sources}\label{sec:typesofsources} 
-The sources used in this chapter include scientific articles regarding the topic “Image to sound conversion”. The articles are published in the fields of physics, sound art and digital media. \todo{Den næste linje skal fjernes hvis vi ikke anvender den} Other sources includes recorded lectures of one of the articles authors.
+The sources used in this chapter include scientific articles regarding the topic “Image to sound conversion”. The articles are published in the fields of physics, sound art and digital media.
 
 \section{Previous work}\label{sec:previouswork}
 
@@ -10,7 +10,7 @@ The sources used in this chapter include scientific articles regarding the topic
 
 To interpret an image, humans are naturally born with visual senses. However, if the visual sense is missing for an individual, the visual image is not perceivable. This allows for a technical replacement which can provide the individual with a tool to substitute the missing sense or enhance other senses which are still functional. An experimental system for vision substitution was developed by Peter B. L. Meijer\cite{Meijer1992}. The system consists of a computer connected to a camera, which records real-time images and converts them into sound. 
 
-The system used a method called time-multiplexed mapping, where the distribution of rows and columns in an image, the height (M) and width (N) respectively, where the pixels are stored in a matrix. The time spent scanning the image(R) is used to define when the current image ends and the next image begins. The images have a resolution of 64 * 64 pixels with 16 gray-tones per pixels. An example of this method is seen in Figure  \ref{fig:image_to_sound}. 
+The system used a method called time-multiplexed mapping, where the distribution of rows and columns in an image, the height (M) and width (N) respectively, where the pixels are stored in a matrix. The time spent scanning the image(R) is used to define when the current image ends and the next image begins. The images have a resolution of 64 * 64 pixels with 16 gray-tones per pixels. An example of this method is seen in Figure \ref{fig:image_to_sound}. 
 
 \begin{figure}[!h] 
 \centering
@@ -46,35 +46,33 @@ This interaction also affected the produced sound which were based on the bright
 
 This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.   
 
-\section{Methods used to evaluate}\label{sub:methodsusedtoevaluate}
+\section{Methods used to evaluate}\label{sec:methodsusedtoevaluate}
 
-To produce a successful system which utilises signal inputs from an image, the theories for signal processing must be defined and discussed to gain knowledge of different varieties. This chapter will go through sound analysis methods and chosen filters for this project. 
+To produce a successful system which utilises signal inputs from an image, the theories for signal processing must be defined and discussed to gain knowledge of different varieties. This section will go through sound analysis methods and chosen filters for this project. 
 
 \subsection{Spectrogram}\label{sub:spectrogram}
 
 https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/understanding-spectrograms/
 
-https://en.wikipedia.org/wiki/Spectrogram#cite_note-1
+A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
 
-A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a 2-dimensional or 3-dimensional coordinate system. A 2-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
+An image has also parameters such as the amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
 
-An image has also parameters such as the amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a 3D spectrogram.
-
-By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transformation which will be expanded upon in the next subsection.  
+By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transformation.  
 
 \subsection{Fourier transformation}\label{sub:fourier}
 
-To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and break it down into smaller pieces. A given signal could be a time-based pattern, as given in a signal, and return the overall cycle by applying filters which measure individual properties upon request and returns the amount of each property and list them. 
+To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and break it down into smaller pieces. A given signal could be a time-based pattern and return the overall cycle by applying filters, which measures individual properties upon request and returns the amount of each property and lists them. 
 
 \begin{figure}
 \caption{The mathematic expression of the Fourier transformation}
 \centering
-\includegraphics[width=1]\textwidth{MathFourier}
+\includegraphics[width=1\textwidth]{MathFourier}
 \end{figure}
 
-The first equation process the amount of frequency k in the signal expressed as X_k. The equation uses the sum of the number of time samples given (N) and the current sample number of time samples considered (n). Thus it uses the expression x_n, which is the value of the signal at time (n), and takes the backwards-moving circular path of the signal with the speed in radians times the percent of the time (n/N) the signal has been looked through. The circular path is the size, speed and starting angle of a given signal also defined as amplitude, frequency and phase.      
+The first equation process the amount of frequency k in the signal expressed as \(X_k\). The equation uses the sum of the number of time samples given \(N\) and the current sample number of time samples considered \(n\). Thus it uses the expression \(x_n\), which is the value of the signal at time \(n\), and takes the backwards-moving circular path of the signal with the speed in radians times the percent of the time \(n/N\) the signal has been looked through. The circular path is the size, speed and starting angle of a given signal also defined as amplitude, frequency and phase.      
 
-This process has the benefits of simplifying the signal by separating the important parts such as frequency which then can be boosted and neglect unwanted properties.       
+This process has the benefits of simplifying the signal by separating the important parts such as frequency, which then can be boosted and also neglect unwanted properties.       
 
 \section{State of the art}\label{sec:stateart}
 In this project, software that allows images to be converted into sounds are to be considered as the state of the art, as they are closely related to the topic of the project.
