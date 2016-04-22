@@ -4,17 +4,19 @@
 This chapter will cover the design iterations and the decisions that were made. 
 
 \section{Conceptual model}
-This project will work with audiolisation of images !eller bare an image?!. Therefore, the initial design is focused on the conversion of images into an audio signal !eller some audio?!. The signal has a corresponding spectrogram, which can be interpreted as an audio effect. This can be used to manipulate existing audio. The output of this operation is then the audio put into the software, modified by the image-created effect. !think alt det her skal rewrites!
+This project will work with audiolisation of image. The initial design is focused on the conversion of images into an audio signal. Each pixel has an intensity value which can be converted into a range that fits the human hearing of 20 to 20.000Hz (insert refrence). The output of this operation can then be manipulated by audio processing filters (insert refrence).
 
-The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how much the image-created effect will modify the existing audio. This allows the user agency of how the output will sound. The user can also be allowed additional creativity by implementing functionalities that allow the user to modify the image used. This would allow the user to create even more unique sound effects, which would add another layer of creative agency. This allows for a wide range of artistic expression, as the user will have control over both the image-created effect, and how it is applied to audio.
+The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effect will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
 
 \section{Peripheral devices}
 The user has to be able to affect the audio that the image generates by interacting with a physical interface. The system will apply an affect which can be modified through a physical scalar which changes the variable range of the power of the effect from 0\% to 100\%, or in digits 0 to 1. For this interface these different variations of a physical scalar has been considered: 
 
 \begin{itemize}
-\item Pedal
-\item Joystick
-\item Variable resistor
+\item Button
+\item Pressure sensor
+\item Ultra sonic distance sensor
+\item Potentiometer
+\item Slider
 \item Bend sensor
 \end{itemize}
 
@@ -56,6 +58,7 @@ The test used 9 different electrical components consisting of the following:
 \end{itemize}
 
 These components were all mounted on a cardboard plate as seen on the figure below.
+
 !!insert figure of pap thing og beskriv det!!
 
 The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explain by test facilitator 1 how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. Test facilitator 2 turned the volume of the music up and down, corresponding to how much the participant !!turned/clicked/slid/moved their hand!!.
