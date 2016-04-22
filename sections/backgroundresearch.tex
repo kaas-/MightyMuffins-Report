@@ -58,11 +58,9 @@ https://en.wikipedia.org/wiki/Spectrogram#cite_note-1
 
 A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a 2-dimensional or 3-dimensional coordinate system. A 2-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
 
-An image has also parameters such as the amplitude and magnitude provided through greyscaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a 3D spectrogram.
+An image has also parameters such as the amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a 3D spectrogram.
 
-\todo {Hvad kan vi bruge det til - relateret til vores project} 
-
-!Tænker at det her er meget en introduktion til camillas!
+By grey scaling an image, these values can be further used in a Fourier transformation which will be expanded upon in the next subsection.  
 
 \subsection{Fourier transformation}\label{sub:fourier}
 
@@ -76,7 +74,7 @@ To utilise a potential given signal by an input image, the Fourier transformatio
 
 The first equation process the amount of frequency k in the signal expressed as X_k. The equation uses the sum of the number of time samples given (N) and the current sample number of time samples considered (n). Thus it uses the expression x_n, which is the value of the signal at time (n), and takes the backwards-moving circular path of the signal with the speed in radians times the percent of the time (n/N) the signal has been looked through. The circular path is the size, speed and starting angle of a given signal also defined as amplitude, frequency and phase.      
 
-This process has its benefits since it simplifies the signal by separating the important parts such as frequency which then can be boosted and neglect unwanted properties.       
+This process has the benefits of simplifying the signal by separating the important parts such as frequency which then can be boosted and neglect unwanted properties.       
 
 \section{State of the art}\label{sec:stateart}
 In this project, software that allows images to be converted into sounds are to be considered as the state of the art, as they are closely related to the topic of the project.
