@@ -23,15 +23,15 @@ The system used a method called time-multiplexed mapping, where the distribution
 \caption{\label{fig:image_to_sound} Principles of the image-to-sound mapping \cite{Meijer1992}}
 \end{figure}
   
-The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. The operations used in the system can also be applied in other settings than an aid for blind individuals, as these operations are mathematical expressions. They are therefore not limited to the use intended by Meijer.
+The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. The operations used in the system can also be applied in other settings than an aid for blind individuals, \todo{tåget argument} as these operations are mathematical expressions. They are therefore not limited to the use intended by Meijer.
 
 \subsection{The Sound of Photographic Image}\label{sec:soundarticle}
 
-A use of images for conversion into sound was performed and described in a paper by Atau Tanaka, who is the chair of digital media and director of culture lab at Newcastle University \cite{Tanaka2012}. The paper describes two processing methods that both converts images into sound.
+A use of images for conversion into sound was performed and described in a paper by Atau Tanaka, who is the chair of digital media and director of culture lab at Newcastle University \cite{Tanaka2012}. The paper describes two processing methods that both convert images into sound.
 
-The first method utilised two image series. The method used to create the sound from the image uses a temporary mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produced high notes and a dark pixel produced a low note \cite{Tanaka2012}.
+The first method utilised two image series. The method used to create the sound from the image uses a temporal mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produced high notes and a dark pixel produced a low note \cite{Tanaka2012}.
 
-The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time. The images were projected with negative pixel values creating a inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
+The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time. The images were projected with pixel values from an inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
 
 \begin{figure}[!h]
 \centering
@@ -49,7 +49,7 @@ To capture human interaction, an infrared camera on top of the installation used
 
 This interaction also affected the produced sound which were based on the brightness of the processed image and thus produced new sounds. 
 
-This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.   
+This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. /\todo{gå videre med praktisk anvendelse} However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.
 
 \section{Methods used to evaluate}\label{sec:methodsusedtoevaluate}
 
@@ -59,23 +59,23 @@ To produce a successful system which utilises signal inputs from an image, the t
 
 https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/understanding-spectrograms/
 
-A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
+\todo{spektrogrammer viser en fordeling af frekvenser over tid} A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
 
-An image has also parameters such as the amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With darker pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
+An image has also parameters such as the \todo{synonymer} amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With lighter pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
 
-By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transformation.  
+By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transform.  
 
-\subsection{Fourier transformation}\label{sub:fourier}
+\subsection{Fourier transform}\label{sub:fourier}
 
-To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and break it down into smaller pieces. A given signal could be a time-based pattern and return the overall cycle by applying filters, which measures individual properties upon request and returns the amount of each property and lists them. 
+To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and \todo{den deler det op i mindre bidder på frekvens-aksen} break it down into smaller pieces. A given signal could be a time-based pattern and return the \todo{hvilken "overall cycle"? energifordeling for hver frekvens} overall cycle by applying filters, which measures individual properties upon request and returns the amount of each property and lists them. 
 
 \begin{figure}
-\caption{The mathematic expression of the Fourier transformation}
+\caption{The mathematical expression of the Fourier transform}
 \centering
 \includegraphics[width=1\textwidth]{MathFourier}
 \end{figure}
 
-The first equation process the amount of frequency k in the signal expressed as \(X_k\). The equation uses the sum of the number of time samples given \(N\) and the current sample number of time samples considered \(n\). Thus it uses the expression \(x_n\), which is the value of the signal at time \(n\), and takes the backwards-moving circular path of the signal with the speed in radians times the percent of the time \(n/N\) the signal has been looked through. The circular path is the size, speed and starting angle of a given signal also defined as amplitude, frequency and phase.      
+The first equation process the amount of frequency k in the signal expressed as \(X_k\). The equation uses the sum of the number of time samples given \(N\) and the current sample number of time samples considered \(n\). Thus it uses the expression \(x_n\), which is the value of the signal at time \(n\), and takes \todo{in what circular path?} the backwards-moving circular path of the signal with the speed in radians times the percent of the time \(n/N\) the signal has been looked through. The circular path is the size, speed and starting angle of a given signal also defined as amplitude, frequency and phase.      
 
 This process has the benefits of simplifying the signal by separating the important parts such as frequency, which then can be boosted and also neglect unwanted properties.       
 
@@ -91,7 +91,7 @@ SonicPhoto \cite{White2013} is a commercial piece of software developed for wind
 \caption{\label{fig:sonicphoto} Interface of SonicPhoto \cite{White2013}}
 \end{figure}
 
-The software allows for customisation, such as being able to change the note harmonics, which cord nodes are played, the base of the pitch, the lowest and highest frequencies. It is also possible to edit the image; changing the alpha, rotation, flipping it on the x or y-axis, and inverting the colours. 
+The software allows for customisation, such as being able to change the note harmonics, which cord nodes are played, the base of the pitch, the lowest and highest frequencies. It is also possible to edit the image; changing the alpha channel, rotation, flipping it on the x or y-axis, and inverting the colours. 
 
 
 \subsection{MetaSynth}\label{sub:metasynth}

@@ -4,12 +4,12 @@
 This chapter will cover the design iterations and the decisions that were made. 
 
 \section{Conceptual model}
-This project will work with audiolisation of image. The initial design is focused on the conversion of images into an audio signal. Each pixel has an intensity value which can be converted into a range that fits the human hearing of 20 to 20.000Hz (insert refrence). The output of this operation can then be manipulated by audio processing filters (insert refrence).
+\todo{her er foretaget nogle valg inden dette afsnit, som skal beskrives}This project will work with audiolisation of image. The initial design is focused on the conversion of images into an audio signal. \todo{beskriv gerne mere i dybden}Each pixel has an intensity value which can be converted into a range that fits the human hearing of 20 to 20.000Hz (insert refrence). The output of this operation can then be manipulated by audio processing filters (insert refrence).
 
 The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effect will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
 
 \section{Peripheral devices}
-The user has to be able to affect the audio that the image generates by interacting with a physical interface. The system will apply an affect which can be modified through a physical scalar which changes the variable range of the power of the effect from 0\% to 100\%, or in digits 0 to 1. For this interface these different variations of a physical scalar has been considered: 
+The user has to be able to affect the audio that the image generates by interacting with a physical interface. The system will apply an effect which can be modified through a physical scalar which changes the variable range of the power of the effect from 0\% to 100\%, or in numbers 0 to 1. For this interface these different variations of a physical scalar has been considered: 
 
 \begin{itemize}
 \item Button
@@ -30,7 +30,7 @@ Each of these peripheral devices makes the user interact with the prototype diff
 
 Figure \ref{fig:axis} shows the scales of which the different devices operate on, how many different axis they are able to manipulate, and to what length.
  
-The button can be clicked as its only functionality. The button have two states: low and high. The low state is when the button is not clicked, and the high state is when the button is being clicked. This means that a system using a button will have programmed states, which will be cycled through in a predetermined direction.
+The button can be clicked as its only functionality. The button have two states: low and high. The low state is when the button is not clicked, and the high state is when the button is being clicked. \todo{tja, den giver et spark til whatever ligger bagved, hvor det bagved kunne sagtens være randomomised}This means that a system using a button will have programmed states, which will be cycled through in a predetermined direction.
 
 Variable resistors allow a system to have a position between the two extremes of low and high. This allows the system to have more fluid control than a simple binary choice of on or off.
 
@@ -73,7 +73,7 @@ Hej Knud. Se venligst bort fra dette afsnit
 Forklar i details om sketchen, hvorfor vi valgte den og indsæt state diagrammet
 
 \section{Interface low-fi test}
-The chosen sketch was made into a paper mock-up to test the percieved affordance and the feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. 
+The chosen sketch was made into a paper mock-up to test the \todo{ind i glossary med dig} percieved affordance and the \todo{dette kan betyde forskellige ting i forskellige sammenhænge} feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. 
 
 The mock-up was tested on 6 fellow Medoialogy students. Test facilitator 1 explained how the interface worked and asked the participant to execute the following tasks:
 
@@ -87,6 +87,8 @@ The mock-up was tested on 6 fellow Medoialogy students. Test facilitator 1 expla
 \item Change the intensity of both or individually both light bulbs
 \item Turn off the device
 \end{itemize}
+
+\todo{beskrive neutrale states}
 
 Results showed that it was clear that to the user that he/she had to use the slider to change the intensity of the light bulb. However, switching between the states of which slider was in use, proved to be difficult for the user since their perception the feedforward was not clear enough. Some users suggested the use of imagery for better understanding of the interface.
 Since the feedforward of the slider was not sufficient enough a feedforward test was conducted.
