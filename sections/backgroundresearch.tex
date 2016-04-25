@@ -8,7 +8,17 @@ The sources used in this chapter include scientific articles regarding the topic
 
 \subsection{Audio filters}
 
-In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine delayed versions of their input signal to produce an effect. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}.
+In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine delayed versions of their input signal filter out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}.
+
+Filters can be put into five basic categories:
+\begin{itemize}
+\item \textbf{Lowpass} which lets lower frequencies pass, and rejects higher frequencies.
+\item \textbf{Highpass} which lets higher frequencies pass, and rejects lower frequencies.
+\item \textbf{Bandpass} which lets frequencies between two thresholds pass, and rejects frequencies outside them.
+\item \textbf{Bandreject} which rejects frequencies between two thresholds, and lets frequencies outside them pass.
+\item \textbf{Allpass} which lets all frequencies pass \cite{zolzer2011dafx}.
+\end{itemize}
+
 
  
 \subsection{An Experimental System for Auditory Image Representation}\label{sec:experimentalsystem}
