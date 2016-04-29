@@ -4,7 +4,7 @@
 This chapter will cover the design iterations and the decisions that were made. 
 
 \section{Initial brainstorm}
-The initial brainstorm consists of two brainstorms that was chained together. The starting point of the first brainstorm was the point "Image to sound" and the second brainstorms starting point was "Filters". 
+The initial brainstorm consisted of two brainstorms that was chained together. The starting point of the first brainstorm was the point "Image to sound" and the second brainstorms starting point was "Filters". 
 
 \begin{figure}[!h] 
 \centering
@@ -14,17 +14,17 @@ The initial brainstorm consists of two brainstorms that was chained together. Th
 
 All the points from "Image to sound" are a mixture of manipulative image processing factors and image capturing methods. 
 The points expanding from "Filters" relates to tools the user can apply to the audio created from the image. 
-"Filters" branches out to the point called "Different Filters" which lists all the different common filters that may be applied to the audio. It also branches out to the point called "Controls". Controlling multiple filters relates to an equalizer. \todo{sæt lidt mere på sætningien}
-Since it is stated in the final problem statement that it is a requirements to be able to control the filters, the point "Controls" is essential in the brainstorm. From "Controls", different methods of controlling filters were thought about, and from these "Intensity of filter", "Multiple filters at once" and "Sliders to adjust" were chosen for the design.
+"Filters" branches out to the point called "Different Filters" which lists various common filters that may be applied to the audio. It also branches out to the point called "Controls". Controlling multiple filters can relate to an equalizer. \todo{sæt lidt mere på sætningien}
+Since it is stated in the final problem statement that it is a requirement to be able to control the filters, the point "Controls" is essential in the brainstorm. From "Controls", different methods of controlling filters were considered, and from these "Toggle all filters", "Intensity of filter", "Multiple filters at once" and "Peripheral devices to adjust intensity" were chosen for the design.
 
-Based on the final problem statement the design team chose to narrow down the brainstorm, resulting  working with a static, RGB image that can be replaced at any time, then applying bandpass, comb and high shelf filters, and being able to apply these individually or at the same time with the possibility to change the intensity of them by using a peripheral device. 
-The reason for choosing the specific filters is the theory behind them. Many of the listed filters are similar in the way they are built, but the chosen filters differentiate between each other but also the sound they will create after applied to an audio signal.
+Based on the final problem statement the design team chose to narrow down the brainstorm, which resulted in working with an RGB image that can be replaced at any time. Then bandpass, comb and high shelf filters are applied, and the user is able to apply these individually or at the same time with the possibility to change the intensity of the filters by using peripheral devices. 
+The reason for choosing the specific filters is the theory behind them. Many of the listed filters are similar in the way they work, but the chosen filters differentiate between each other in the way they alter the sound.
 
 
 \section{Conceptual model}
-\todo{her er foretaget nogle valg inden dette afsnit, som skal beskrives}This project will work with audiolisation of image. The initial design is focused on the conversion of images into an audio signal. \todo{beskriv gerne mere i dybden}Each pixel has an intensity value which can be converted into a range that fits the human hearing of 20 to 20.000Hz (insert refrence). The output of this operation can then be manipulated by audio processing filters (insert refrence).
+\todo{her er foretaget nogle valg inden dette afsnit, som skal beskrives}This project will work with audiolisation of image. The initial design is focused on the conversion of images into an audio signal. \todo{beskriv gerne mere i dybden}Each pixel has a value for each RGB colour channel that can be converted into a range that fits the human hearing, which is defined to be between 20 to 20.000Hz \todo{insert reference with human hearing range definition}. The output of this operation can then be manipulated by audio processing filters \todo{insert reference}.
 
-The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effect will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
+The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effects will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
 
 \section{Peripheral devices}
 The user has to be able to affect the audio that the image generates by interacting with a physical interface. The system will apply an effect which can be modified through a physical scalar which changes the variable range of the power of the effect from 0\% to 100\%, or in numbers 0 to 1. For this interface these different variations of a physical scalar has been considered: 
