@@ -4,10 +4,21 @@
 This chapter will cover the design iterations and the decisions that were made. 
 
 \section{Initial brainstorm}
-The initial brainstorm consists of two brainstorms that was chained together. The starting point of the first brainstorm was the point "Image to sound" and the second brainstorms starting point was "Filters". All the points from "Image to sound" 
-\todo{write the "image to sound" points pls}
+The initial brainstorm consists of two brainstorms that was chained together. The starting point of the first brainstorm was the point "Image to sound" and the second brainstorms starting point was "Filters". 
 
-The points expanding from "Filters" relates to tools the user can apply to the audio created from the image. "Filters" branches out to the point called "Different Filters" which lists all the differnt common filters that may be applied to the audio. It also branches out to the point called "Equalisers" \todo{glossary} which inspired "Controls" that leads to the different possibilities for controlling the filters applied on the image created audio.
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{initialbrainstorm}
+\caption{\label{fig:initialbrainstorm} The initial brainstorm. Orange bubbles indicates the starting points, the blue bubbles indicate the chosen topics within the "Image to sound" brainstorm and the red bubbles are the chosen filter and filter methods within "Filters" brainstorm.}
+\end{figure}
+
+All the points from "Image to sound" are a mixture of manipulative image processing factors and image capturing methods. 
+The points expanding from "Filters" relates to tools the user can apply to the audio created from the image. 
+"Filters" branches out to the point called "Different Filters" which lists all the different common filters that may be applied to the audio. It also branches out to the point called "Controls". Controlling multiple filters relates to an equalizer. \todo{sæt lidt mere på sætningien}
+Since it is stated in the final problem statement that it is a requirements to be able to control the filters, the point "Controls" is essential in the brainstorm. From "Controls", different methods of controlling filters were thought about, and from these "Intensity of filter", "Multiple filters at once" and "Sliders to adjust" were chosen for the design.
+
+Based on the final problem statement the design team chose to narrow down the brainstorm, resulting  working with a static, RGB image that can be replaced at any time, then applying bandpass, comb and high shelf filters, and being able to apply these individually or at the same time with the possibility to change the intensity of them by using a peripheral device. 
+The reason for choosing the specific filters is the theory behind them. Many of the listed filters are similar in the way they are built, but the chosen filters differentiate between each other but also the sound they will create after applied to an audio signal.
 
 
 \section{Conceptual model}
@@ -26,12 +37,6 @@ The user has to be able to affect the audio that the image generates by interact
 \item Slider
 \item Bend sensor
 \end{itemize}
-
-\begin{figure}[!h] 
-\centering
-\includegraphics[width=1\textwidth]{Axis}
-\caption{\label{fig:axis}}
-\end{figure}
 
 Each of these peripheral devices makes the user interact with the prototype differently and changes what functionality can be implemented.
 
@@ -52,10 +57,14 @@ The way that these devices would be used are as variable controller for the effe
 \todo{expand upon the advantages and disadvantages of the different categories of devices}
 
 \section{Early sketches and testing}
-While sketching ideas for the design, the group encountered the obstacle of not knowing which electrical components to use. Therefore the component test's purpose was to decide which component is the most intuitive to use. All the !previous mentioned! electronic components were used in the test, though there was two different buttons and 3 differnt potentiometers.
+While sketching ideas for the design, the group encountered the obstacle of not knowing which electrical components to use. Therefore the component test's purpose was to decide which component is the most intuitive to use. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers.
 These components were all mounted on a cardboard plate as seen on the figure below.
 
-!!insert figure of pap thing og beskriv det!!
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{componenttest}
+\caption{\label{fig:componenttest} The component board used in the component test used to determine which electrical component to use.}
+\end{figure}
 
 The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explain by test facilitator 1 how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. Test facilitator 2 turned the volume of the music up and down, corresponding to how much the participant !!turned/clicked/slid/moved their hand!!.
 
@@ -89,7 +98,11 @@ Since the feedforward of the slider was not sufficient enough, a feedforward tes
 \section{Feedforward test}
 Eight different designs for the slider was made, as can be seen on the figure below.
 
-!insert image of slider!
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{fftestimage}
+\caption{\label{fig:fftestimage} The 8 different designs for the feedforward test.}
+\end{figure}
 
 The participants for this test were also from the Medialogy studies. The test included 46 participants. The participants were explained the context of use !for the slider! and after asked to choose one of the eight different designs that they thought had the best feedforward. The participants were all sitting in their group areas, so to ensure the participants answers were not affect each others, they were asked to point at a piece of paper with numbers, representing the different designs, randomly located on the paper to further ensure confidentiality when telling the test facilitator what their answers were. 
 
