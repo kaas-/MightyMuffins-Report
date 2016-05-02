@@ -1,3 +1,27 @@
 %!TEX root = ../master.tex
 \chapter{Implementation}\label{ch:implementation}
 
+\section{Tools used}\label{sec:codeoverview}
+The tools used in this project is Pure data and Arduino. 
+Pure data is a C/C++ based coding language which utilises pre-constructed blocks of code which have to be connected to one another. Pure data is the code implemented in our project which is responsible for the audio and image processing. Gem is used for the image processing purpose, which is a library in Pura data that allows for various image processing and animation methods.  
+Furthermore three different filters have been constructed and implemented using pure data.
+
+Arduino is a micro controller that allows the user to code and create their own circuits using various components, this allows for a wide range of purposes. In this project the Arudino is responsible for the physical interface which the user has available. 
+
+\section{Code overview}\label{sec:codeoverview}
+	\subsection{Image processing}\label{sub:imageprocessing}
+	As the project revolves around pictures being audiolised, various image processing methods have been implemented. To get an image loaded into Pure data the library gem have been imported and applied. In gem it is possible to go through each pixel getting its RGB value as three different values. This is done using a double nested for-loop that is constructed using the expr function in Pure data, which allows for construction of consecutive if-statements. The first if-statement gives an output that is increased by 0.001 for every cycle if the input value is less than one. The second if-statement checks if the input value is greater or equal to one, if that is the case it adds 0.01 to a value starting at zero, which is then outputted. The last if-statement checks if the second input is greater or equal to 1, if that is the case subtract 1 from the value of the second input.
+	
+	Pipe is an object that delay the input given to it by a specific amount. It is used here to make sure that the program does not give a stack overflow error
+	Use double nested for-loop, expr(for-loop), pipe, RGB values, Normalize, table, gem
+
+	\subsection{Audiolisation of image}\label{sub:audiolisationofimage} 
+
+	\subsection{Filters}\label{sub:filters}
+	
+	\subsection{Arduino}\label{sub:arduino}
+	
+\section{Physical interface}\label{sec:physicalinterface}
+	\subsection{Components}\label{sub:components}
+	
+	\subsection{Circuit diagram}\label{sub:circuitdiagram}
