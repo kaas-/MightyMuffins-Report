@@ -33,7 +33,7 @@ The system used a method called time-multiplexed mapping, where the distribution
 \caption{\label{fig:image_to_sound} Principles of the image-to-sound mapping \cite{Meijer1992}}
 \end{figure}
   
-The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. The operations used in the system can also be applied in other settings than an aid for blind individuals, \todo{tåget argument} as these operations are mathematical expressions. They are therefore not limited to the use intended by Meijer.
+The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. The operations used in the system can also be applied in other settings than an aid for blind individuals.\todo{Måske skal der argumenteres på den forrige linje eller komme med et eksempel} They are therefore not limited to the use intended by Meijer.
 
 \subsection{The Sound of Photographic Image}\label{sec:soundarticle}
 
@@ -59,7 +59,9 @@ To capture human interaction, an infrared camera on top of the installation used
 
 This interaction also affected the produced sound which were based on the brightness of the processed image and thus produced new sounds. 
 
-This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. /\todo{gå videre med praktisk anvendelse} However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.
+This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. \todo{gå videre med praktisk anvendelse} However, since there was no evaluation of this exhibit, it is difficult to know of the practical application of these methods. This is due to it being used in an artistic way, instead of a practical one.
+
+- What practical applications can be used? 
 
 \section{Methods used to evaluate}\label{sec:methodsusedtoevaluate}
 
@@ -69,15 +71,15 @@ To produce a successful system which utilises signal inputs from an image, the t
 
 https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/understanding-spectrograms/
 
-\todo{spektrogrammer viser en fordeling af frekvenser over tid} A spectrogram is a graphical representation of sound frequencies. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows a change in frequency over time, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
+A spectrogram is a graphical representation of sound frequencies over time. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows the distribution of a signal power, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
 
-An image has also parameters such as the \todo{synonymer} amplitude and magnitude provided through grey scaling an image. \todo{indsæt ref.} With lighter pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
+An image has also amplitude provided through grey scaling an image. \todo{indsæt ref.} With lighter pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
 
 By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transform.  
 
 \subsection{Fourier transform}\label{sub:fourier}
 
-To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and \todo{den deler det op i mindre bidder på frekvens-aksen} break it down into smaller pieces. A given signal could be a time-based pattern and return the \todo{hvilken "overall cycle"? energifordeling for hver frekvens} overall cycle by applying filters, which measures individual properties upon request and returns the amount of each property and lists them. 
+To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and separate the different components in the signal on the frequence axe. A given signal could be a time-based pattern and by applying filters, which measures individual properties upon request, it returns the amount of each property and lists them. 
 
 \begin{figure}
 \caption{The mathematical expression of the Fourier transform}
