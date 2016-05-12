@@ -46,30 +46,23 @@ The user has to be able to affect the audio the image generates by interacting w
 \end{itemize}
 
 Each of these peripheral devices makes the user interact with the prototype differently and changes the functionality of the prototype depending on which peripheral device are implemented.
- 
 The button's functionality is it can be clicked. The button have two states: low and high. The low state is when the button is not clicked, and the high state is when the button is being clicked. This means that a system using a button will have programmed states, which will be cycled through in a predetermined or random direction.
-
 Variable resistors allow a system to have a position between the two extremes of low and high. This allows the system to have more fluent control than a simple binary choice of on or off. There are multiple variable resistors to choose from, which changes the user's interaction with the given device depending on the used peripheral device.  They all function in a fundamentally similar way. 
-
 Pressure sensors react to being pressured, such as from touching and pushing. More pressure equals to a higher position on the scale.
-
 Ultra sonic distance sensors measures the distance between the sensor and a surface in front of the sensor by sending out pulses. The further away the sensor is from an object, the more frequent it will send out a pulse until the echo returns to the sensor. 
-
 Potentiometers can adjust between a minimum and maximum position. Depending on how much the potentiometer is turned it will result in the scale output from the device. Turning knobs is an example of potentiometers. A slider is a variant of a potentiometer with a linear interface instead of a rotary one.
-
 Unlike the previously mentioned variable resistors that all have a clear low and high state, the bend sensor functions differently. The bend sensor rests at a mid-point between low and high. Depending on which direction the sensor is bent the resistance will either go up or down.
-
 These devices would be used as a variable controller for the different effects. Depending on which device is chosen, the integration for the user will be different. This will be tested in the iterations of the prototype and discussed further to make sure that the interface is user-friendly and easy to understand. 
 
 \todo{expand upon the advantages and disadvantages of the different categories of devices}
 
 \section{Early sketches}
-!INSERT TEXT HERE! INTRODUCTION FOR THIS SECTION!
+
 
 \begin{figure}[!h] 
 \centering
 \includegraphics[width=1\textwidth]{Earlysketchforkellige}
-\caption{\label{fig:Earlysketchforkellige} Shows the first ideas regarding the artefact the group wanted to use for the product.}
+\caption{\label{fig:Earlysketchforkellige} Shows the first three ideas regarding the artefact.}
 \end{figure}
 
 \begin{itemize}
@@ -78,8 +71,8 @@ These devices would be used as a variable controller for the different effects. 
 \item Joystick 
 \end{itemize}
 
-The pedal was originally meant to be the artefact the project group wanted to continue working with, but after further investigation it was found out that the pedal would be very hard to control if the user wanted to change the effect with just a little bit, therefore another idea came up which was a knob/ button the user could control with their hands, since there is a lot of different components in the category "knobs and buttons" a short test was made to decide which knob the users would prefer, this test is described in the section bellow. The last idea was a joystick, like the ones you find in an old arcade, this was mostly a fun idea because the joystick would be able to changes the sound on two axes instead of just one as we see in the button and pedal. It was decided by the project group to stick with the knob/ button idea because it would be easier to control and find exiting looking knobs. 
-
+The pedal was originally meant to be the artefact the project group wanted to continue working with, but after further investigation it was found out that the pedal would be very hard to control if the user wanted to change the effect with just a little bit, therefore another idea came up which was a knob/ button the user could control with their hands, since there is a lot of different components in the category "knobs and buttons" a short test was made to decide which knob the users would prefer, this test is described in the section below. 
+The last idea was a joystick, like the ones you find in an old arcade, this was mostly a fun idea because the joystick would be able to changes the sound on two axes instead of just one as we see in the button and pedal. It was decided by the project group to stick with the knob/button idea because it would be easier to control and find exiting looking knobs. 
 
 \section{Electrical Component Test}
 While sketching ideas for the design, the group encountered the obstacle of not knowing which electrical components to use. Therefore the component test's purpose was to decide which component is the most preferred and intuitive to use. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure \ref{fig:componenttest}.
@@ -96,17 +89,24 @@ While sketching ideas for the design, the group encountered the obstacle of not 
 \caption{\label{fig:componenttest} The component board used in the component test used to determine which electrical component to use.}
 \end{figure}
 
-The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explain by test facilitator 1 how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. Test facilitator 2 turned the volume of the music up and down, corresponding to how much the participant !!turned/clicked/slid/moved their hand!!.
+The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by "Test Facilitator 1" how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. "Test Facilitator 2" turned the volume of the music up and down, corresponding to how much the participant !!turned/clicked/slid/moved their hand!!.
 
-Results showed that the participants preferred using the slider, showed on the figure below, when changing the volume of the music. New design sketches were created based on this result.
+Results, as can be seen on figure \todo{indsæt skema over resultater} showed the participants preferred using the slider when changing the volume of the music. New design sketches were created based on this result.
+
 
 \section{The chosen sketch}
-* indsæt billede af PID low-fi model* 
+!Indsæt billede af PID low-fi model og beskriv!
 
 \section{Interface low-fi test}
-The chosen sketch was made into a paper mock-up to test the \todo{ind i glossary med dig} percieved affordance and the \todo{dette kan betyde forskellige ting i forskellige sammenhænge} feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. 
+The chosen sketch was made into a paper mock-up to test the \todo{ind i glossary med dig} percieved affordance and the \todo{dette kan betyde forskellige ting i forskellige sammenhænge} feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. The paper mock-up can be seen on figure \ref{fig:Papermockoff}.
 
-The mock-up was tested on 6 fellow Medialogy students. Test facilitator 1 explained how the interface worked and asked the participant to execute the following tasks:
+\begin{figure}[!h] 
+\centering
+\includegraphics[width=1\textwidth]{Papermockoff}
+\caption{\label{fig:Papermockoff} shows the low-fi paper mock-up of interface.}
+\end{figure}
+
+The mock-up was tested on 6 fellow Medialogy students. "Test Facilitator 1" explained how the interface works and asked the participant to execute the following tasks:
 
 \begin{itemize}
 \item Turn on the device
