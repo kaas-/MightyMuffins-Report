@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  13 MAY 2016 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  13 MAY 2016 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1181,7 +1181,17 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count296
 \@quotereset=\count297
-No file master.aux.
+(./master.aux
+Package biblatex Info: Trying to load language 'danish'...
+Package biblatex Info: ... file 'danish.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/danish.lbx
+File: danish.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
+)
+
+LaTeX Warning: Label `sec:codeoverview' multiply defined.
+
+)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -1199,7 +1209,7 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Try loading font information for T1+pplx on input line 21.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pplx.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1300,11 +1310,12 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
+
+(./master.out) (./master.out)
 \@outlinefile=\write5
 \openout5 = `master.out'.
 
-
-(./sections/frontpage.tex
+ (./sections/frontpage.tex
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 22.
 
 
@@ -1368,7 +1379,7 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 \titlepageleftcolumnwidth=\skip82
 \titlepagerightcolumnwidth=\skip83
 
-<figures/aau_logo_en.pdf, id=20, 115.43124pt x 77.28876pt>
+<figures/aau_logo_en.pdf, id=248, 115.43124pt x 77.28876pt>
 File: figures/aau_logo_en.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_en.pdf>
@@ -1386,10 +1397,6 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 36.
 
-
-LaTeX Warning: Reference `LastPage' on page iii undefined on input line 36.
-
-
 Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
 [] 
  []
@@ -1401,18 +1408,12 @@ Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
 
 
 ]
-Package biblatex Info: Trying to load language 'danish'...
-Package biblatex Info: ... file 'danish.lbx' found.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/danish.lbx
-File: danish.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
 
-<figures/aau_logo_da.pdf, id=36, 121.45375pt x 77.28876pt>
+<figures/aau_logo_da.pdf, id=265, 121.45375pt x 77.28876pt>
 File: figures/aau_logo_da.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_da.pdf>
@@ -1422,9 +1423,6 @@ Package pdftex.def Info: figures/aau_logo_da.pdf used on input line 70.
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page v undefined on input line 70.
 
 
 Overfull \hbox (3.18648pt too wide) in paragraph at lines 70--70
@@ -1446,24 +1444,32 @@ Package babel Info: Redefining danish shorthand "~
 ]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 32.
+ (./master.toc [7
+
+
+])
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
- [7
 
 
-] [8
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-]
+[8] (./master.tdo)
 \tf@tdo=\write7
 \openout7 = `master.tdo'.
 
- (./sections/glossary.tex [9]
-[10
+ (./sections/glossary.tex [9
 
 
-]) (./sections/preface.tex [11] [12
+] [10
+
+
+]) (./sections/preface.tex
+[11] [12
 
 
 ]) [13] [14
@@ -1503,12 +1509,7 @@ LaTeX Warning: Citation 'zolzer2011dafx' on page 5 undefined on input line 19.
 
 LaTeX Warning: Citation 'Meijer1992' on page 5 undefined on input line 26.
 
-[5]
-
-LaTeX Warning: Reference `fig:image_to_sound' on page 6 undefined on input line
- 28.
-
-<./figures/image_to_sound.png, id=120, 346.896pt x 205.36725pt>
+[5] <./figures/image_to_sound.png, id=438, 346.896pt x 205.36725pt>
 File: ./figures/image_to_sound.png Graphic file (type png)
 
 <use ./figures/image_to_sound.png>
@@ -1536,11 +1537,7 @@ LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 40.
 
 LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 42.
 
-
-LaTeX Warning: Reference `fig:tanakaresynthesis' on page 7 undefined on input l
-ine 44.
-
-<./figures/tanakaresynthesis.png, id=130, 328.22626pt x 212.795pt>
+<./figures/tanakaresynthesis.png, id=447, 328.22626pt x 212.795pt>
 File: ./figures/tanakaresynthesis.png Graphic file (type png)
 
 <use ./figures/tanakaresynthesis.png>
@@ -1555,17 +1552,13 @@ LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 49.
 LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 49.
 
 
-LaTeX Warning: Reference `fig:tanakainterfacepreview' on page 7 undefined on in
-put line 52.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7 <./figures/tanakaresynthesis.png>]
-<./figures/tanakainterfacepreview.png, id=138, 332.24126pt x 197.73875pt>
+<./figures/tanakainterfacepreview.png, id=455, 332.24126pt x 197.73875pt>
 File: ./figures/tanakainterfacepreview.png Graphic file (type png)
 
 <use ./figures/tanakainterfacepreview.png>
@@ -1595,7 +1588,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: Marginpar on page 9 moved.
 
-<./figures/MathFourier.png, id=148, 584.93532pt x 244.66406pt>
+<./figures/MathFourier.png, id=462, 584.93532pt x 244.66406pt>
 File: ./figures/MathFourier.png Graphic file (type png)
 
 <use ./figures/MathFourier.png>
@@ -1612,7 +1605,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: Citation 'White2013' on page 10 undefined on input line 98.
 
-<./figures/sonicphoto.png, id=160, 569.12625pt x 360.59718pt>
+<./figures/sonicphoto.png, id=470, 569.12625pt x 360.59718pt>
 File: ./figures/sonicphoto.png Graphic file (type png)
 
 <use ./figures/sonicphoto.png>
@@ -1632,7 +1625,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./figures/sonicphoto.png>]
-<./figures/metasynth.png, id=169, 853.68938pt x 424.58624pt>
+<./figures/metasynth.png, id=477, 853.68938pt x 424.58624pt>
 File: ./figures/metasynth.png Graphic file (type png)
 
 <use ./figures/metasynth.png>
@@ -1673,7 +1666,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 Chapter 6.
-<./figures/initialbrainstorm.png, id=204, 1195.46625pt x 1157.32375pt>
+<./figures/initialbrainstorm.png, id=508, 1195.46625pt x 1157.32375pt>
 File: ./figures/initialbrainstorm.png Graphic file (type png)
 
 <use ./figures/initialbrainstorm.png>
@@ -1704,7 +1697,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <./figures/initialbrainstorm.png>]
-<./figures/Flowdiagram.png, id=225, 845.0772pt x 597.9138pt>
+<./figures/Flowdiagram.png, id=520, 845.0772pt x 597.9138pt>
 File: ./figures/Flowdiagram.png Graphic file (type png)
 
 <use ./figures/Flowdiagram.png>
@@ -1723,7 +1716,7 @@ Overfull \hbox (1.68425pt too wide) in paragraph at lines 60--61
 g the phys-i-cal de-vice. Sketches
  []
 
-<./figures/Earlysketchforkellige.jpg, id=234, 2055.68pt x 1445.4pt>
+<./figures/Earlysketchforkellige.jpg, id=527, 2055.68pt x 1445.4pt>
 File: ./figures/Earlysketchforkellige.jpg Graphic file (type jpg)
 
 <use ./figures/Earlysketchforkellige.jpg>
@@ -1745,15 +1738,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./figures/Earlysketchforkellige.jpg>]
-
-LaTeX Warning: Reference `fig:komponenter' on page 22 undefined on input line 8
-0.
-
-
-LaTeX Warning: Reference `fig:componenttest' on page 22 undefined on input line
- 80.
-
-<./figures/komponenter.png, id=246, 578.16pt x 457.71pt>
+<./figures/komponenter.png, id=539, 578.16pt x 457.71pt>
 File: ./figures/komponenter.png Graphic file (type png)
 
 <use ./figures/komponenter.png>
@@ -1763,7 +1748,7 @@ Package pdftex.def Info: ./figures/komponenter.png used on input line 84.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/componenttest.jpg, id=247, 3998.94pt x 2999.205pt>
+<./figures/componenttest.jpg, id=540, 3998.94pt x 2999.205pt>
 File: ./figures/componenttest.jpg Graphic file (type jpg)
 
 <use ./figures/componenttest.jpg>
@@ -1773,30 +1758,15 @@ Package pdftex.def Info: ./figures/componenttest.jpg used on input line 90.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<./figures/sketchmock.jpg, id=542, 1541.76pt x 1670.24pt>
+File: ./figures/sketchmock.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `fig:sketchmock' on page 22 undefined on input line 10
-0.
-
-
-! LaTeX Error: File `sektchmock' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 ...degraphics[width=1\textwidth]{sektchmock}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use ./figures/sketchmock.jpg>
+Package pdftex.def Info: ./figures/sketchmock.jpg used on input line 104.
+(pdftex.def)             Requested size: 401.18387pt x 434.60896pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:Papermockoff' on page 22 undefined on input line 
-111.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1808,7 +1778,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: Marginpar on page 23 moved.
 
-<./figures/Papermockoff.jpg, id=255, 1509.64pt x 963.6pt>
+<./figures/Papermockoff.jpg, id=551, 1509.64pt x 963.6pt>
 File: ./figures/Papermockoff.jpg Graphic file (type jpg)
 
 <use ./figures/Papermockoff.jpg>
@@ -1825,7 +1795,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./figures/komponenter.png>]
-<./figures/fftestimage.png, id=266, 1000.48781pt x 706.13812pt>
+<./figures/fftestimage.png, id=559, 1000.48781pt x 706.13812pt>
 File: ./figures/fftestimage.png Graphic file (type png)
 
 <use ./figures/fftestimage.png>
@@ -1848,8 +1818,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./figures/Papermockoff.jpg>]
-<./figures/finaldesignsketch3grey.png, id=281, 1175.39125pt x 547.04375pt>
+[25 <./figures/sketchmock.jpg>]
+<./figures/finaldesignsketch3grey.png, id=568, 1175.39125pt x 547.04375pt>
 File: ./figures/finaldesignsketch3grey.png Graphic file (type png)
 
 <use ./figures/finaldesignsketch3grey.png>
@@ -1860,7 +1830,7 @@ e 160.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/finalinterfacewood.png, id=282, 1284.8pt x 696.6025pt>
+<./figures/finalinterfacewood.png, id=569, 1284.8pt x 696.6025pt>
 File: ./figures/finalinterfacewood.png Graphic file (type png)
 
 <use ./figures/finalinterfacewood.png>
@@ -1868,6 +1838,13 @@ Package pdftex.def Info: ./figures/finalinterfacewood.png used on input line 16
 7.
 (pdftex.def)             Requested size: 401.18387pt x 217.51767pt.
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./figures/Papermockoff.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1877,25 +1854,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./figures/fftestimage.png>]) (./sections/implementation.tex
+[27 <./figures/fftestimage.png> <./figures/finaldesignsketch3grey.png>])
+(./sections/implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./figures/finaldesignsketch3grey.png> <./figures/finalinterfacewood.png>]
-[28
-
-
-]
+[28 <./figures/finalinterfacewood.png>]
 Chapter 7.
-[29]
+[29
 
-LaTeX Warning: Reference `sub:imageprocessing' on page 30 undefined on input li
-ne 19.
 
-) (./sections/codeoverview.tex
+]) (./sections/codeoverview.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1947,11 +1919,7 @@ Appendix A.
 \tf@thm=\write8
 \openout8 = `master.thm'.
 
-
-
-Package lastpage Warning: Rerun to get the references right on input line 55.
-
-
+ 
 AED: lastpage setting LastPage
 [41]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
@@ -1959,15 +1927,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package rerunfilecheck Info: File `master.out' has not changed.
+(rerunfilecheck)             Checksum: 8B45C210763F47AD3AA9D4FE453A8FD0;3765.
 
-
-Package rerunfilecheck Warning: File `master.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `master.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8B45C210763F47AD3AA9D4FE453A8FD0;3765.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1975,7 +1937,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -1987,13 +1949,13 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24906 strings out of 493089
- 447657 string characters out of 6134842
- 785412 words of memory out of 5000000
- 27670 multiletter control sequences out of 15000+600000
+ 24967 strings out of 493089
+ 448663 string characters out of 6134842
+ 812150 words of memory out of 5000000
+ 27732 multiletter control sequences out of 15000+600000
  53629 words of font info for 90 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 64i,14n,76p,933b,1791s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,76p,933b,2767s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -2002,10 +1964,10 @@ e/2015/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (55 pages, 7591741 bytes).
+Output written on master.pdf (55 pages, 7723530 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
+ 706 PDF objects out of 1000 (max. 8388607)
+ 606 compressed objects within 7 object streams
  157 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
