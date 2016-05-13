@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  13 MAY 2016 13:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.2)  13 MAY 2016 13:42
 entering extended mode
 **master.tex
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.tex
@@ -1511,7 +1511,7 @@ LaTeX Warning: Citation 'zolzer2011dafx' on page 5 undefined on input line 19.
 
 LaTeX Warning: Citation 'Meijer1992' on page 5 undefined on input line 26.
 
-[5] <./figures/image_to_sound.png, id=413, 346.896pt x 205.36725pt>
+[5] <./figures/image_to_sound.png, id=411, 346.896pt x 205.36725pt>
 File: ./figures/image_to_sound.png Graphic file (type png)
 
 <use ./figures/image_to_sound.png>
@@ -1540,7 +1540,7 @@ LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 40.
 
 LaTeX Warning: Citation 'Tanaka2012' on page 7 undefined on input line 42.
 
-<./figures/tanakaresynthesis.png, id=422, 328.22626pt x 212.795pt>
+<./figures/tanakaresynthesis.png, id=420, 328.22626pt x 212.795pt>
 File: ./figures/tanakaresynthesis.png Graphic file (type png)
 
 <use ./figures/tanakaresynthesis.png>
@@ -1562,7 +1562,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/tanakaresynth
 esis.png>]
-<./figures/tanakainterfacepreview.png, id=430, 332.24126pt x 197.73875pt>
+<./figures/tanakainterfacepreview.png, id=428, 332.24126pt x 197.73875pt>
 File: ./figures/tanakainterfacepreview.png Graphic file (type png)
 
 <use ./figures/tanakainterfacepreview.png>
@@ -1593,7 +1593,7 @@ cepreview.png>]
 
 LaTeX Warning: Marginpar on page 9 moved.
 
-<./figures/MathFourier.png, id=437, 584.93532pt x 244.66406pt>
+<./figures/MathFourier.png, id=435, 584.93532pt x 244.66406pt>
 File: ./figures/MathFourier.png Graphic file (type png)
 
 <use ./figures/MathFourier.png>
@@ -1611,7 +1611,7 @@ ng>]
 
 LaTeX Warning: Citation 'White2013' on page 10 undefined on input line 98.
 
-<./figures/sonicphoto.png, id=444, 569.12625pt x 360.59718pt>
+<./figures/sonicphoto.png, id=442, 569.12625pt x 360.59718pt>
 File: ./figures/sonicphoto.png Graphic file (type png)
 
 <use ./figures/sonicphoto.png>
@@ -1631,7 +1631,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/sonicphoto.p
-ng>] <./figures/metasynth.png, id=451, 853.68938pt x 424.58624pt>
+ng>] <./figures/metasynth.png, id=449, 853.68938pt x 424.58624pt>
 File: ./figures/metasynth.png Graphic file (type png)
 
 <use ./figures/metasynth.png>
@@ -1678,7 +1678,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 Chapter 6.
-<./figures/initialbrainstorm.png, id=482, 1195.46625pt x 1157.32375pt>
+<./figures/initialbrainstorm.png, id=480, 1195.46625pt x 1157.32375pt>
 File: ./figures/initialbrainstorm.png Graphic file (type png)
 
 <use ./figures/initialbrainstorm.png>
@@ -1709,7 +1709,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/initialbrain
-storm.png>] <./figures/Flowdiagram.png, id=494, 845.0772pt x 597.9138pt>
+storm.png>] <./figures/Flowdiagram.png, id=492, 845.0772pt x 597.9138pt>
 File: ./figures/Flowdiagram.png Graphic file (type png)
 
 <use ./figures/Flowdiagram.png>
@@ -1723,7 +1723,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/Flowdiagram.
-png>] <./figures/Earlysketchforkellige.jpg, id=501, 2055.68pt x 1445.4pt>
+png>] <./figures/Earlysketchforkellige.jpg, id=499, 2055.68pt x 1445.4pt>
 File: ./figures/Earlysketchforkellige.jpg Graphic file (type jpg)
 
 <use ./figures/Earlysketchforkellige.jpg>
@@ -1745,14 +1745,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/Earlysketchf
-orkellige.jpg>] <./figures/komponenter.png, id=514, 578.16pt x 457.71pt>
+orkellige.jpg>] <./figures/komponenter.png, id=511, 578.16pt x 457.71pt>
 File: ./figures/komponenter.png Graphic file (type png)
 
 <use ./figures/komponenter.png>
 Package pdftex.def Info: ./figures/komponenter.png used on input line 89.
 (pdftex.def)             Requested size: 401.18387pt x 317.60118pt.
 
-<./figures/componenttest.jpg, id=515, 3998.94pt x 2999.205pt>
+<./figures/componenttest.jpg, id=512, 3998.94pt x 2999.205pt>
 File: ./figures/componenttest.jpg Graphic file (type jpg)
 
 <use ./figures/componenttest.jpg>
@@ -1780,7 +1780,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/componenttes
-t.jpg>] <./figures/fftestimage.png, id=530, 1000.48781pt x 706.13812pt>
+t.jpg>] <./figures/fftestimage.png, id=525, 1000.48781pt x 706.13812pt>
 File: ./figures/fftestimage.png Graphic file (type png)
 
 <use ./figures/fftestimage.png>
@@ -1797,7 +1797,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
-<./figures/finaldesignsketch3grey.png, id=535, 1175.39125pt x 547.04375pt>
+<./figures/finaldesignsketch3grey.png, id=530, 1175.39125pt x 547.04375pt>
 File: ./figures/finaldesignsketch3grey.png Graphic file (type png)
 
 <use ./figures/finaldesignsketch3grey.png>
@@ -1808,7 +1808,7 @@ e 150.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/finalinterfacewood.png, id=536, 1284.8pt x 696.6025pt>
+<./figures/finalinterfacewood.png, id=531, 1284.8pt x 696.6025pt>
 File: ./figures/finalinterfacewood.png Graphic file (type png)
 
 <use ./figures/finalinterfacewood.png>
@@ -1838,18 +1838,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [26 <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/finaldesigns
 ketch3grey.png> <C:/Users/Victor/Documents/GitHub/MightyMuffins-Report/figures/
 finalinterfacewood.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27] [28
-
-
-]
 Chapter 7.
-[29])
+[27
+
+
+])
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/codeoverview.te
 x
 
@@ -1858,35 +1851,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[28]
 Chapter 8.
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/finalprototype.
-tex [31
+tex [29
 
 
-] [32
+] [30
 
 
 ]
 Chapter 9.
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/evaluation.tex
-[33] [34
+[31] [32
 
 
 ]
 Chapter 10.
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/discussion.tex
-[35] [36
+[33] [34
 
 
 ]
 Chapter 11.
 )
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/conclusion.tex
-[37] [38
+[35] [36
 
 
 ]
@@ -1896,7 +1889,7 @@ Chapter 12.
 LaTeX Warning: Empty bibliography on input line 51.
 
 (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\sections/appAname.tex
-[39] [40
+[37] [38
 
 
 ]
@@ -1905,15 +1898,21 @@ Appendix A.
 \tf@thm=\write8
  
 AED: lastpage setting LastPage
-[41]
+[39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (C:\Users\Victor\Documents\GitHub\MightyMuffins-Report\master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 0BCF6C0008A85CA07706B948489BBAE9;3547.
 
+
+Package rerunfilecheck Warning: File `master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master.out':
+(rerunfilecheck)             Before: 0BCF6C0008A85CA07706B948489BBAE9;3547
+(rerunfilecheck)             After:  2B34F41FBC6C90DF9CC92B00DC4ACEB0;3472.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1931,30 +1930,18 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24955 strings out of 493921
- 451493 string characters out of 3144873
+ 24936 strings out of 493921
+ 451195 string characters out of 3144873
  805239 words of memory out of 3000000
- 27542 multiletter control sequences out of 15000+200000
+ 27530 multiletter control sequences out of 15000+200000
  53629 words of font info for 90 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
  64i,14n,77p,955b,2757s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.29} has been referenced but does n
-ot exist, replaced by a fixed one
+pdfTeX warning (dest): name{page.41} has been referenced but does not exist, 
+replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.37} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.34} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.32} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.26} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.24} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{section.6.12} has been referenced but does not exis
+t, replaced by a fixed one
 
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\V
 ictor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk> 
@@ -1963,9 +1950,9 @@ sx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (55 pages, 7542044 bytes).
+Output written on master.pdf (53 pages, 7540037 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
  517 words of extra memory for PDF output out of 10000 (max. 10000000)
 
