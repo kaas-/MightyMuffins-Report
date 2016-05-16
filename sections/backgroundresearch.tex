@@ -67,11 +67,21 @@ To produce a successful system which utilises signal inputs from an image, the t
 
 \subsection{Spectrogram}\label{sub:spectrogram}
 
-https://www.izotope.com/en/community/blog/tips-tutorials/2014/09/understanding-spectrograms/
+A spectrogram is a graphical representation of sound frequencies over time \cite{Izotope2014}. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows the distribution of a signal power, hence usually having frequency on the vertical axis and time on the horizontal axis.
 
-A spectrogram is a graphical representation of sound frequencies over time. It can be expressed as either a two-dimensional or three-dimensional coordinate system. A two-dimensional coordinate system based on sound waves shows the distribution of a signal power, hence usually having frequency on the vertical axis and time on the horizontal axis. \todo {Indsæt venligst et billede af de 2 spectrogrammer og ref}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\textwidth]{2DSpectrogram}
+\caption{\label{fig:2DSpectrogram} A 2D spectrogram \cite{steilglitz1997digital}}
+\end{figure}
 
-An image has also amplitude provided through grey scaling an image. \todo{indsæt ref.} With lighter pixel values, the greater the amplitude and magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\textwidth]{3DSpectrogram}
+\caption{\label{fig:3DSpectrogram} A 3D spectrogram - Waterfall version of the preceding figure\cite{steilglitz1997digital}}
+\end{figure}
+
+An image has also magnitude provided through grey scaling an image \cite{Izotope2014}. With lighter pixel values, the greater the magnitude though it is possible to convert the colors to a third axis and and therefore produce a three-dimensional spectrogram.
 
 By grey scaling an image and committing these values to a spectrogram, they can be further analysed in a Fourier transform.  
 
