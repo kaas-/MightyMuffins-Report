@@ -3,7 +3,7 @@
 \todo{This part needs rework. Write after chapter is done.}
 This chapter will cover the design iterations and the decisions that were made. 
 
-\section{Initial brainstorm}
+\section{Initial brainstorm}\label{sec:initialbrainstorm}
 The initial brainstorm consisted of two brainstorms that was chained together. The starting point of the first brainstorm was the point "Image to sound" and the second brainstorms starting point was "Filters". 
 
 \begin{figure}[!h] 
@@ -21,14 +21,11 @@ Based on the final problem statement the design team chose to narrow down the br
 The reason for choosing the specific filters is the theory behind them. Many of the listed filters are similar in the way they work, but the chosen filters differentiate between each other in the way they alter the sound.
 
 
-\section{Conceptual model}
-
-\todo{her er foretaget nogle valg inden dette afsnit, som skal beskrives}This project will work with audiolisation of an image. The initial design is focused on the conversion of images into an audio signal. \todo{beskriv gerne mere i dybden}Each pixel has a value for each RGB colour channel that can be converted into a range that fits the human hearing, which is defined to be between 20 to 20.000Hz \cite{Dsp1997}. The output of this operation can then be manipulated by audio processing filters \todo{insert reference}.
-
-The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effects will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
+\section{Conceptual model}\label{sec:conceptualmodel}
+This project will work with audiolisation of an image. The initial design is focused on the conversion of images into an audio signal. Each pixel has a value for each RGB colour channel that can be converted into a range that fits the human hearing, which is defined to be between 20 to 20.000Hz \cite{Dsp1997}. The output of this operation can then be manipulated by audio processing filters \todo{insert reference}. The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effects will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
 
 
-\section{Peripheral devices}
+\section{Peripheral devices}\label{sec:periphealdevices}
 The user has to be able to affect the audio the image generates by interacting with a physical interface. The system will apply an effect which can be modified through a physical device which changes the variable range of the power of the effect from 0\% to 100\%, or in numbers 0 to 1. For this interface these different variations of a peripheral devices has been considered: 
 
 \begin{itemize}
@@ -51,28 +48,8 @@ These devices would be used as a variable controller for the different effects. 
 
 \todo{expand upon the advantages and disadvantages of the different categories of devices}
 
-\section{Early sketches}
-This section describes three of the first ideas regarding the physical device. Sketches were made based on discussions in the project group and ideas from the supervisor, the ideas ended out in three basic sketches all made in hand on a single piece of paper. The sketches is shown in figure and explained more detailed later in this section. 
-
-\begin{figure}[!h] 
-\centering
-\includegraphics[width=1\textwidth]{Earlysketchforkellige}
-\caption{\label{fig:Earlysketchforkellige}  First three ideas regarding the device.}
-\end{figure}
-
-The sketches are based on three ideas. The purpose of the device is the same, but the way the user has to control it is different, the sketches were made to determine with device the final product should use as the final device. The sketch consists of three different components as listed below: 
-
-\begin{itemize}
-\item Pedal
-\item Button/knob 
-\item Joystick 
-\end{itemize}
-
-The pedal was originally meant to be the artefact the project group wanted to continue working with, but after further investigation it was found out that the pedal would be very hard to control if the user wanted to change the effect with just a little bit, therefore another idea came up which was a knob/ button the user could control with their hands, since there is a lot of different components in the category "knobs and buttons" a short test was made to decide which knob the users would prefer, this test is described in the section below. 
-The last idea was a joystick, like the ones you find in an old arcade, this was mostly a fun idea because the joystick would be able to changes the sound on two axes instead of just one as we see in the button and pedal. It was decided by the project group to stick with the knob/button idea because it would be easier to control and find exiting looking knobs. 
-
-\section{Electrical Component Test}
-While sketching ideas for the design, the group encountered the obstacle of not knowing which electrical components to use. Therefore the component test's purpose was to decide which component is the most preferred and intuitive to use. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure \ref{fig:componenttest}.
+\section{Electrical Component Test}\label{sec:comptest}
+To figure out which electrical components the users prefers and think is the most intuitive to use, an electrical component test was conducted. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure \ref{fig:componenttest}.
 
 \begin{figure}[!h] 
 \centering
@@ -86,12 +63,22 @@ While sketching ideas for the design, the group encountered the obstacle of not 
 \caption{\label{fig:componenttest} The component board used in the component test used to determine which electrical component to use.}
 \end{figure}
 
-The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by "Test Facilitator 1" how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. "Test Facilitator 2" turned the volume of the music up and down, corresponding to how much the participant !!turned/clicked/slid/moved their hand!!.
+The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by "Test Facilitator 1" how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. "Test Facilitator 2" turned the volume of the music up and down, all depending on how the participant used the component.
+Results, as can be seen on table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. A new design was created based on this result.
 
-Results, as can be seen on figure \todo{indsæt skema over resultater} showed the participants preferred using the slider when changing the volume of the music. New design sketches were created based on this result.
+\begin{table}[]
+\centering
+\caption{Results of the electrical component test.}}
+\label{tab:electritest}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\hline
+Electrical Component & 1 & 2 & 3 & 4 & 5.1 & 5.2 & 5.3 & 6 & 7 \\ \hline
+Amount of votes & 1 & 0 & 3 & 0 & 0 & 0 & 0 & 6 & 0 \\ \hline
+\end{tabular}
+\end{table}
 
 
-\section{The chosen sketch}
+\section{The chosen sketch}\label{sec:thechosensketch}
 Based on feedback from the components test, an interface design sketch were made to make a paper mock-up test, the sketch can be seen on figure \ref{fig:sketchmock}. 
 
 \begin{figure}[!h] 
@@ -100,10 +87,10 @@ Based on feedback from the components test, an interface design sketch were made
 \caption{\label{fig:sketchmock} Sketch showing the chosen interface for a paper mock-up test.}
 \end{figure}
 
-The chosen sketch consists of an on/off button, two sliders with two different effects and a button that changes the state of the effects so that when the device is turned on, the device automatically goes into state one, which is "Effect 1" is turned on. When the user presses the button once, the device goes into state two, which means that "Effect 1" turns off and "Effect 2" turns on. When the users presses the button for the third time, the device goes into state three, which means that both "Effect 1" and "Effect 2" is turned on at the same time, if the user presses the button again the circut starts all over again with state one. If the user grabs one of the sliders and moves it from side to side the effects will change intensity, this works in every single state. When the user is done, he/she simply turns off the device by pressing "off". 
+The chosen sketch consists of an on/off button, two sliders with two different effects and a button that changes the state of the effects. When the device is turned on it automatically goes into state one which turns on "Effect 1". When the user presses the button, the device switches to state two, which turns off "Effect 1" and turns on "Effect 2". When pressed for the second time, the device goes into state three where both "Effect 1" and "Effect 2" is turned on simultaneously. If pressed again, the circuit goes back to state one. Slider one (the left one) controls the intensity of "Effect 1" and is only active in state one and three. Slider two (the right one) also controls the intensity but for "Effect 2" and is active under state two and three.
 
-\section{Interface low-fi test}
-The chosen sketch was made into a paper mock-up to test the \todo{ind i glossary med dig} percieved affordance and the \todo{dette kan betyde forskellige ting i forskellige sammenhænge} feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. The paper mock-up can be seen on figure \ref{fig:Papermockoff}.
+\section{Interface low-fi test}\label{sec:lowfitest}
+The chosen sketch was made into a paper mock-up to test the percieved affordance and the feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. The paper mock-up can be seen on figure \ref{fig:Papermockoff}.
 
 \begin{figure}[!h] 
 \centering
@@ -124,12 +111,9 @@ The mock-up was tested on 6 fellow Medialogy students. "Test Facilitator 1" expl
 \item Turn off the device
 \end{itemize}
 
-\todo{beskrive neutrale states}
+Results showed that it was clear that to the user that he/she had to use the slider to change the intensity of the light bulb. However, switching between the states of which slider was in use, proved to be difficult for the user since their perception the feedforward was not clear enough. Some users suggested the use of imagery for better understanding of the interface. Since the feedforward of the slider was not sufficient enough, a feedforward test was conducted.
 
-Results showed that it was clear that to the user that he/she had to use the slider to change the intensity of the light bulb. However, switching between the states of which slider was in use, proved to be difficult for the user since their perception the feedforward was not clear enough. Some users suggested the use of imagery for better understanding of the interface.
-Since the feedforward of the slider was not sufficient enough, a feedforward test was conducted.
-
-\section{Feedforward test}
+\section{Feedforward test}\label{sec:fftest}
 Eight different designs for the slider was made, as can be seen on the figure below.
 
 \begin{figure}[!h] 
@@ -138,7 +122,7 @@ Eight different designs for the slider was made, as can be seen on the figure be
 \caption{\label{fig:fftestimage} The 8 different designs for the feedforward test.}
 \end{figure}
 
-The participants for this test were also from the Medialogy studies. The test included 46 participants. The participants were explained the context of use !for the slider! and after asked to choose one of the eight different designs that they thought had the best feedforward. The participants were all sitting in their group areas, so to ensure the participants answers were not affect each others, they were asked to point at a piece of paper with numbers, representing the different designs, randomly located on the paper to further ensure confidentiality when telling the test facilitator what their answers were. 
+The participants for this test were also from the Medialogy studies. The test included 46 participants. The test facilitators explained the context of use for the slider and after asked the participants to choose one of the eight different designs that they thought had the best feedforward. The participants were all sitting in their group areas, so to ensure the participants answers were not affect each others, they were asked to point at a piece of paper with numbers, representing the different designs, randomly located on the paper to further ensure confidentiality when telling the test facilitator what their answers were. 
 
 \begin{table}[!h]
 \centering
@@ -150,31 +134,26 @@ Amount of votes & 2 & 2 & 14 & 9 & 15 & 1 & 3 & 0 \\ \hline
 \end{tabular}
 \end{table}
 
-Statistically speaking, the most preferred feedforward design was the fifth design with "MIN" and "MAX" written on it had 15 votes while the third feedforward design with the "Amplitude Bar" \todo{definer} received 14 votes. The fourth design with the values "0\%" percent "100\%" percent had the third highest amount of votes being nine out of 46 and the least favourite designs were the seventh with 3 votes and the first and second design with 2 votes each and the sixth design with only one vote. 
+Statistically speaking, the most preferred feedforward was design five which had 15 votes, while design three received 14 votes and design four had 9 votes.
+Even though design three and design five received almost the same amount of votes, the design team choose to go with the fifth design. The prototype will be expanded of this design and it will be taken into further iterations of the performance testing. 
 
-Even though the third and fifth feedforward design received almost the same amount of votes, the design team choose to go with the fifth design. The prototype will be expanded of this design and it will be taken into further iterations of the performance testing. 
 
-
-\section{Final design sketch}
-This section will cover the final interface design sketch with the reason for them.  
-
-The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made.
+\section{Final design sketch}\label{sec:finalsketch}
+The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made. From section \ref{sec:lowfitest} it was determined to remove the on and off button as well as giving the user the possibility to switch between the different states in order to avoid confusion and to obtain a more simplistic design. Since the button that decided which slider was active was removed, all three sliders are constantly active. It was also decided to use three sliders to get three different effects, all based on the choices made in the initial brainstorm from section \ref{sec:initialbrainstorm}. The final design can be seen on figure \ref{fig:finaldesignsketch3grey}
 
 \begin{figure}[!h] 
 \centering
 \includegraphics[width=1\textwidth]{finaldesignsketch3grey}
-\caption{\label{fig:inaldesignsketch3grey} The figure shows a sketch of the final interface design with a metal frame.}
-\end{figure}
-  
-The design utilises the three sliders based on the chosen filters from the !conceptual model/initial brainstorm! but the button for turning on/off the interface has been removed since it was redundant for the functionality of the interface and would powered by the Arduino connected to a pc. The sliders have a range of minimum to maximum which is a value of 0,0 to 1,0 digit in the software. The button for the activation of the individual filters has also been removed based on the feedback from the tested users who were confused what function the button had. The sliders work therefore simultaneously.      
+\caption{\label{fig:finaldesignsketch3grey} The figure shows a sketch of the final interface design with a metal frame.}
+\end{figure}  
  
- \section{Final product }
+\section{Final Prototype}\label{sec:finalprototype}
 *indsæt billeder af den færdigbyggede kasse* 
 
 The finished product is build based on the sketches figure xx* The product is made of wood and is kept in neutral colours so the user / owner / museum is to determine the colour of the box so it matches the specific art work as show in in *figure xxx - billede af seupet med farve på* To reach the optimal hight of the box, it will be places on a stander / pedistal / something. 
 
 
-\section{Storyboard}
+\section{Storyboard}\label{sec:storyboard}
 The picture shown in \ref{fig:Flowdiagram} shows a narrative story board, explaining how the product could be used in contex. The setting of the story board is at an art museum. The user is a visitor at the museum, he walks by a large picture of a woman, in front of the picture is a box with sliders in top ( the final product \ref{fig:finalinterfacesketch3grey} ) and speakers above the picture. The user reads the description placed on the box and starts to manipulate with the sliders. The result is a user made sound coming of the speakers, and the user is happy with his creation. 
 
 \begin{figure}[!h] 
