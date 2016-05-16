@@ -14,15 +14,15 @@ The initial brainstorm consisted of two brainstorms that was chained together. T
 
 All the points from "Image to sound" are a mixture of manipulative image processing factors and image capturing methods. 
 The points expanding from "Filters" relates to tools the user can apply to the audio created from the image. 
-"Filters" branches out to the point called "Different Filters" which lists various common filters that may be applied to the audio. It also branches out to the point called "Controls". Controlling multiple filters can relate to an equalizer. \todo{sæt lidt mere på sætningien}
+"Filters" branches out to the point called "Different Filters" which lists various common filters that may be applied to the audio. It also branches out to the point called "Controls" which allows the control of the different coefficients in filters and therefore the output of a filter. 
 Since it is stated in the final problem statement that it is a requirement to be able to control the filters, the point "Controls" is essential in the brainstorm. From "Controls", different methods of controlling filters were considered, and from these "Toggle all filters", "Intensity of filter", "Multiple filters at once" and "Peripheral devices to adjust intensity" were chosen for the design.
 
-Based on the final problem statement the design team chose to narrow down the brainstorm, which resulted in working with an RGB image that can be replaced at any time. Then bandpass, comb and high shelf filters are applied, and the user is able to apply these individually or at the same time with the possibility to change the intensity of the filters by using peripheral devices. 
+Based on the final problem statement, the design team chose to narrow down the brainstorm, which resulted in working with an RGB image that can be replaced at any time. Then bandpass, comb and high shelf filters are applied, and the user is able to apply these individually or at the same time with the possibility to change the intensity of the filters by using peripheral devices. 
 The reason for choosing the specific filters is the theory behind them. Many of the listed filters are similar in the way they work, but the chosen filters differentiate between each other in the way they alter the sound.
 
 
 \section{Conceptual model}\label{sec:conceptualmodel}
-This project will work with audiolisation of an image. The initial design is focused on the conversion of images into an audio signal. Each pixel has a value for each RGB colour channel that can be converted into a range that fits the human hearing, which is defined to be between 20 to 20.000Hz \cite{Dsp1997}. The output of this operation can then be manipulated by audio processing filters \todo{insert reference}. The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effects will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
+This project will work with audiolisation of an image. The initial design is focused on the conversion of images into an audio signal. Each pixel has a value for each RGB colour channel that can be converted into a range that fits the human hearing, which is defined to be between 20 to 20.000Hz \cite{Dsp1997}. The output of this operation can then be manipulated by audio processing filters. The concept includes a control interface in the artefact. It allows the user to have control over the output in real time, as the control interface will change how the filter effects will modify the image-created audio. This gives the user agency of how the output will sound. To allow the user to create even more unique sounds, multiple filter can be applied simultaneously. This allows for a wide range of artistic expression, as the user will have control over the audio output.
 
 
 \section{Peripheral devices}\label{sec:periphealdevices}
@@ -38,12 +38,19 @@ The user has to be able to affect the audio the image generates by interacting w
 \end{itemize}
 
 Each of these peripheral devices makes the user interact with the prototype differently and changes the functionality of the prototype depending on which peripheral device are implemented.
+
 The button's functionality is it can be clicked. The button have two states: low and high. The low state is when the button is not clicked, and the high state is when the button is being clicked. This means that a system using a button will have programmed states, which will be cycled through in a predetermined or random direction.
+
 Variable resistors allow a system to have a position between the two extremes of low and high. This allows the system to have more fluent control than a simple binary choice of on or off. There are multiple variable resistors to choose from, which changes the user's interaction with the given device depending on the used peripheral device.  They all function in a fundamentally similar way. 
+
 Pressure sensors react to being pressured, such as from touching and pushing. More pressure equals to a higher position on the scale.
+
 Ultra sonic distance sensors measures the distance between the sensor and a surface in front of the sensor by sending out pulses. The further away the sensor is from an object, the more frequent it will send out a pulse until the echo returns to the sensor. 
+
 Potentiometers can adjust between a minimum and maximum position. Depending on how much the potentiometer is turned it will result in the scale output from the device. Turning knobs is an example of potentiometers. A slider is a variant of a potentiometer with a linear interface instead of a rotary one.
+
 Unlike the previously mentioned variable resistors that all have a clear low and high state, the bend sensor functions differently. The bend sensor rests at a mid-point between low and high. Depending on which direction the sensor is bent the resistance will either go up or down.
+
 These devices would be used as a variable controller for the different effects. Depending on which device is chosen, the integration for the user will be different. This will be tested in the iterations of the prototype and discussed further to make sure that the interface is user-friendly and easy to understand. 
 
 \todo{expand upon the advantages and disadvantages of the different categories of devices}
@@ -66,7 +73,7 @@ To figure out which electrical components the users prefers and think is the mos
 The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by "Test Facilitator 1" how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. "Test Facilitator 2" turned the volume of the music up and down, all depending on how the participant used the component.
 Results, as can be seen on table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. A new design was created based on this result.
 
-\begin{table}[]
+\begin{table}[!h]
 \centering
 \caption{Results of the electrical component test.}
 \label{tab:electritest}
@@ -139,7 +146,7 @@ Even though design three and design five received almost the same amount of vote
 
 
 \section{Final design sketch}\label{sec:finalsketch}
-The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made. From section \ref{sec:lowfitest} it was determined to remove the on and off button as well as giving the user the possibility to switch between the different states in order to avoid confusion and to obtain a more simplistic design. Since the button that decided which slider was active was removed, all three sliders are constantly active. It was also decided to use three sliders to get three different effects, all based on the choices made in the initial brainstorm from section \ref{sec:initialbrainstorm}. The final design can be seen on figure \ref{fig:finaldesignsketch3grey}
+The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made. From section \ref{sec:lowfitest} it was determined to remove the on and off button as well as giving the user the possibility to switch between the different states in order to avoid confusion and to obtain a more simplistic design. Since the button that decided which slider was active was removed, all three sliders are constantly active. It was also decided to use three sliders to get three different effects, all based on the choices made in the initial brainstorm from section \ref{sec:initialbrainstorm}. The final design can be seen on figure \ref{fig:finaldesignsketch3grey}.
 
 \begin{figure}[!h] 
 \centering

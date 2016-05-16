@@ -6,21 +6,6 @@ The sources used in this chapter include scientific articles regarding the topic
 
 \section{Previous work}\label{sec:previouswork}
 
-\subsection{Audio filters}
-
-In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine delayed versions of their input signal filter out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}.
-
-Filters can be put into five basic categories:
-\begin{itemize}
-\item \textbf{Lowpass} which lets lower frequencies pass, and rejects higher frequencies.
-\item \textbf{Highpass} which lets higher frequencies pass, and rejects lower frequencies.
-\item \textbf{Bandpass} which lets frequencies between two thresholds pass, and rejects frequencies outside them.
-\item \textbf{Bandreject} which rejects frequencies between two thresholds, and lets frequencies outside them pass.
-\item \textbf{Allpass} which lets all frequencies pass \cite{zolzer2011dafx}.
-\end{itemize}
-
-
- 
 \subsection{An Experimental System for Auditory Image Representation}\label{sec:experimentalsystem}
 
 To interpret an image, humans are naturally born with visual senses. However, if the visual sense is missing for an individual, the visual image is not perceivable. This allows for a technical replacement which can provide the individual with a tool to substitute the missing sense or enhance other senses which are still functional. An experimental system for vision substitution was developed by Peter B. L. Meijer\cite{Meijer1992}. The system consists of a computer connected to a camera, which records real-time images and converts them into sound. 
@@ -33,15 +18,14 @@ The system used a method called time-multiplexed mapping, where the distribution
 \caption{\label{fig:image_to_sound} Principles of the image-to-sound mapping \cite{Meijer1992}}
 \end{figure}
   
-The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. \todo {Læs den sidste sætning igennem} These theories and technical setup can be taken into consideration for a system with audiolisation of an image but the system will be tested and evaluated in the end.    
+The experiment showed promising functionality to convert images to sound but lacks a field study test on people with blindness. Moreover, the advantages and disadvantages of this system is yet to be proven. This questions the reliability of the system since there is no recordings of tested data presented in the article of the experiment. However the sound theory represented in the article supports the system's functionality. These theories and the physical setup can be taken into consideration for a system that deals with audiolisation of an image, but the system will have to be tested and evaluated in the end.
 
 \subsection{The Sound of Photographic Image}\label{sec:soundarticle}
-
 A use of images for conversion into sound was performed and described in a paper by Atau Tanaka, who is the chair of digital media and director of culture lab at Newcastle University \cite{Tanaka2012}. The paper describes two processing methods that both convert images into sound.
 
 The first method utilised two image series. The method used to create the sound from the image uses a temporal mapping and additive synthesis on raw grayscale images, by scanning every pixel. A bright pixel produced high notes and a dark pixel produced a low note \cite{Tanaka2012}.
 
-The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time. The images were projected with pixel values from an inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}.  
+The second method was used for an interactive art installation. The interactive art consisted of a wooden structure with panels covered in rice paper to display Tanaka's pre-processed images from one of the image series. The images were processed through re-synthesis processes, where the frequency bands where quantisized to whole tones and pentatonic, five notes on a scale were mapped, in which the key notes are played one at a time. The images were projected with pixel values from an inverted image of the original and each row displayed different frequency ranging from low to high frequencies. An example of this result can be seen in Figure \ref{fig:tanakaresynthesis}. 
 
 \begin{figure}[!h]
 \centering
@@ -57,9 +41,7 @@ To capture human interaction, an infrared camera on top of the installation used
 \caption{\label{fig:tanakainterfacepreview}\cite{Tanaka2012}}
 \end{figure}
 
-This interaction also affected the produced sound which were based on the brightness of the processed image and thus produced new sounds. 
-
-This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. However, since there was no evaluation of this exhibit, it is difficult to know of if the system was a success or inadequate. But due to the system being used in an artistic way, the creator did not see it necessary to implement a practical use of this system.
+This interaction also affected the produced sound which were based on the brightness of the processed image and thus produced new sounds. This visualisation of sound through images shows dynamic functionality of a interactive system, which utilises human interaction to alter a preprocessed image. However, since there was no evaluation of this exhibit, it is difficult to know of if the system was a success or inadequate. But due to the system being used in an artistic way, the creator did not see it necessary to implement a practical use of this system. A potential use for this system could be in rehabilitation for the lack of motor skills. By using an interface the patient would have to manoeuvre their hands around on an interactive field and have a camera track the movement and give audio feedback to the patient if done right or wrong. Another use could be practising memory for blind people such as an interactive memory game where the user needs to find two equal sounds out of many. 
 
 \section{Methods used to evaluate}\label{sec:methodsusedtoevaluate}
 
@@ -90,7 +72,7 @@ By grey scaling an image and committing these values to a spectrogram, they can 
 To utilise a potential given signal by an input image, the Fourier transformation can take a given signal and separate the different components in the signal on the frequence axe. A given signal could be a time-based pattern and by applying filters, which measures individual properties upon request, it returns the amount of each property and lists them. 
 
 \begin{figure}
-\caption{The mathematical expression of the Fourier transform}
+\caption{The mathematical expression of the Fourier transform}\cite{MathFourier2013}
 \centering
 \includegraphics[width=1\textwidth]{MathFourier}
 \end{figure}
