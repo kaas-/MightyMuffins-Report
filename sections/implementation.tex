@@ -1,12 +1,24 @@
 %!TEX root = ../master.tex
 \chapter{Implementation}\label{ch:implementation}
 
-\section{Tools used}\label{sec:codeoverview}
+\section{Tools used}\label{sec:toolsused}
 The tools used in this project is Pure data and Arduino. 
 Pure data is a C/C++ based coding language which utilises pre-constructed blocks of code which have to be connected to one another. Pure data is the code implemented in our project which is responsible for the audio and image processing. Gem is used for the image processing purpose, which is a library in Pura data that allows for various image processing and animation methods.  
 Furthermore three different filters have been constructed and implemented using pure data.
 
 Arduino is a micro controller that allows the user to code and create their own circuits using various components, this allows for a wide range of purposes. In this project the Arudino is responsible for the physical interface which the user has available. 
+
+\subsection{Audio filters}
+In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine delayed versions of their input signal filter out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}.
+
+Filters can be put into five basic categories:
+\begin{itemize}
+\item \textbf{Lowpass} which lets lower frequencies pass, and rejects higher frequencies.
+\item \textbf{Highpass} which lets higher frequencies pass, and rejects lower frequencies.
+\item \textbf{Bandpass} which lets frequencies between two thresholds pass, and rejects frequencies outside them.
+\item \textbf{Bandreject} which rejects frequencies between two thresholds, and lets frequencies outside them pass.
+\item \textbf{Allpass} which lets all frequencies pass \cite{zolzer2011dafx}.
+\end{itemize}
 
 \section{Code overview}\label{sec:codeoverview}
 	\subsection{Image processing}\label{sub:imageprocessing}
