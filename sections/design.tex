@@ -51,12 +51,24 @@ Potentiometers can adjust between a minimum and maximum position. Depending on h
 
 Unlike the previously mentioned variable resistors that all have a clear low and high state, the bend sensor functions differently. The bend sensor rests at a mid-point between low and high. Depending on which direction the sensor is bent the resistance will either go up or down.
 
-These devices would be used as a variable controller for the different effects. Depending on which device is chosen, the integration for the user will be different. This will be tested in the iterations of the prototype and discussed further to make sure that the interface is user-friendly and easy to understand. 
+These devices would be used as a variable controller for the different effects. Depending on which device is chosen, the integration for the user will be different. This will be tested in the iterations of the prototype and discussed further to make sure that the interface is user-friendly and easy to understand. \todo{do we need this paragraph}
 
-\todo{expand upon the advantages and disadvantages of the different categories of devices}
+Several conjectures can be made regarding the usability and appropriateness of each peripheral device. The peripheral device controls some sort of graduation in two directions. 
+
+While a button (telegraph or otherwise) can be used to increase or decrease a given effect in steps, it presents a lack user control for fine adjustments. Furthermore, if the user wishes to quickly move from one end of the spectrum to the other one button must be pressed repeatedly which can be straining.
+
+The other devices all work in a similar way to one another; they are always in an analogue state that can be directly mapped to some kind of scale. This makes them ideal for use in this project. The question that remains is then which is more usable in our context. This can be evaluated using the notions of perceived affordance, feedforward, and feedback as defined by Norman \cite{Norman:1999:ACD:301153.301168}.
+
+Through this lense it becomes clear that the regular potentiometers are the worst choice. The potentiometers that make use of grooves for better gripping provide the affordance that they can be turned, but it does not indicate whether turning it one way or the other affects the system in a certain way. Furthermore, it provides no feedback as to the state of the module. 
+
+The pressure sensor affords pushing, however, it does not provide any feedforward regarding the fact that it is a pressure sensor. This means that any information the user receives from feedback, that could potentially enlighten them with this fact is from the software or a label. Disregarding that hurdle, the user receives feedback from the sensation of pressure they apply to the sensor. 
+
+The slide potentiometer, when labeled with a minimum and maximum, is the clearest device. It clearly and intuitively provides the affordance, that force can be applied to the slider to move it, and that this controls some sort of position on a scale. The slider also provides feedback with its position in the potentiometer in that it directly corresponds to a position on the scale it controls. 
+
+Finally, the distance sensor provides neither perceived affordance, feedforward or feedback on its own in any way, however, an exception can be made in its case, depending on the context of use. In an art gallery for instance, the device can potentially make the system provide incidental feedback, since potential users that simply walk by the installation will modulate the sound. This, from the users' perspective, unexpected behaviour invites curiosity. Thus it is worth considering as a peripheral device, even if it does not perform well in a formal evaluation of affordance, feedforward, and feedback.
 
 \section{Electrical Component Test}\label{sec:comptest}
-To figure out which electrical components the users prefers and think is the most intuitive to use, an electrical component test was conducted. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure \ref{fig:componenttest}.
+To figure out which electrical components the users prefers and think is the most intuitive to use, an electrical component test was conducted. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure  \ref{fig:componenttest}.
 
 \begin{figure}[!h] 
 \centering
@@ -71,7 +83,7 @@ To figure out which electrical components the users prefers and think is the mos
 \end{figure}
 
 The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by "Test Facilitator 1" how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. "Test Facilitator 2" turned the volume of the music up and down, all depending on how the participant used the component.
-Results, as can be seen on table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. A new design was created based on this result.
+Results, as can be seen on table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. Based on this result and the evaluation made in Section~\ref{sec:periphealdevices} a new design was created.
 
 \begin{table}[!h]
 \centering
