@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.2)  18 MAY 2016 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.2)  19 MAY 2016 14:36
 entering extended mode
 **master.tex
 (master.tex
@@ -1170,9 +1170,10 @@ Package hyperref Info: Option `plainpages' set `false' on input line 168.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 168.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 168.
-\@input{parskip.aux}
-No file parskip.tex.
-) (setup/hyphenations.tex) (setup/macros.tex
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(setup/hyphenations.tex) (setup/macros.tex
 \c@currexactr=\count293
 \c@endexactr=\count294
 \c@exa=\count295
@@ -1347,8 +1348,6 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 29.
  [1
 
-
-
 {C:/Users/MarkusKristian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 (sections/colophon.tex
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 5.
@@ -1364,7 +1363,7 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 \titlepageleftcolumnwidth=\skip82
 \titlepagerightcolumnwidth=\skip83
 
-<figures/aau_logo_en.pdf, id=242, 115.43124pt x 77.28876pt>
+<figures/aau_logo_en.pdf, id=254, 115.43124pt x 77.28876pt>
 File: figures/aau_logo_en.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_en.pdf>
@@ -1388,17 +1387,13 @@ Overfull \hbox (3.18648pt too wide) in paragraph at lines 36--36
 
 [3
 
- <./figures/aau_logo_en.pdf>] [4
-
-
-
-]
+ <./figures/aau_logo_en.pdf>] [4]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
 
-<figures/aau_logo_da.pdf, id=259, 121.45375pt x 77.28876pt>
+<figures/aau_logo_da.pdf, id=271, 121.45375pt x 77.28876pt>
 File: figures/aau_logo_da.pdf Graphic file (type pdf)
 
 <use figures/aau_logo_da.pdf>
@@ -1422,7 +1417,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 70.
-[5 <./figures/aau_logo_da.pdf>]) [6
+[5
+
+
+
+ <./figures/aau_logo_da.pdf>]) [6
 
 
 
@@ -1477,7 +1476,7 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 
 ]
 Chapter 3.
-<./figures/image_to_sound.png, id=395, 346.896pt x 205.36725pt>
+<./figures/image_to_sound.png, id=410, 346.896pt x 205.36725pt>
 File: ./figures/image_to_sound.png Graphic file (type png)
 
 <use ./figures/image_to_sound.png>
@@ -1489,14 +1488,7 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] <./figures/tanakaresynthesis.png, id=409, 328.22626pt x 212.795pt>
-File: ./figures/tanakaresynthesis.png Graphic file (type png)
-
-<use ./figures/tanakaresynthesis.png>
-Package pdftex.def Info: ./figures/tanakaresynthesis.png used on input line 32.
-
-(pdftex.def)             Requested size: 401.18387pt x 260.0998pt.
-
+[5]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1504,7 +1496,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/image_to_sound.png>]
-<./figures/tanakainterfacepreview.png, id=419, 332.24126pt x 197.73875pt>
+<./figures/tanakaresynthesis.png, id=430, 328.22626pt x 212.795pt>
+File: ./figures/tanakaresynthesis.png Graphic file (type png)
+
+<use ./figures/tanakaresynthesis.png>
+Package pdftex.def Info: ./figures/tanakaresynthesis.png used on input line 32.
+
+(pdftex.def)             Requested size: 401.18387pt x 260.0998pt.
+
+<./figures/tanakainterfacepreview.png, id=434, 332.24126pt x 197.73875pt>
 File: ./figures/tanakainterfacepreview.png Graphic file (type png)
 
 <use ./figures/tanakainterfacepreview.png>
@@ -1522,7 +1522,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./figures/tanakaresynthesis.png>]
-<./figures/2DSpectrogram.png, id=430, 292.84406pt x 146.79843pt>
+<./figures/2DSpectrogram.png, id=445, 292.84406pt x 146.79843pt>
 File: ./figures/2DSpectrogram.png Graphic file (type png)
 
 <use ./figures/2DSpectrogram.png>
@@ -1540,7 +1540,7 @@ ne 57.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/3DSpectrogram.png, id=431, 319.1925pt x 152.82094pt>
+<./figures/3DSpectrogram.png, id=446, 319.1925pt x 152.82094pt>
 File: ./figures/3DSpectrogram.png Graphic file (type png)
 
 <use ./figures/3DSpectrogram.png>
@@ -1565,7 +1565,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./figures/tanakainterfacepreview.png>]
-<./figures/MathFourier.png, id=440, 584.93532pt x 244.66406pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./figures/2DSpectrogram.png> <./figures/3DSpectrogram.png>]
+<./figures/MathFourier.png, id=463, 584.93532pt x 244.66406pt>
 File: ./figures/MathFourier.png Graphic file (type png)
 
 <use ./figures/MathFourier.png>
@@ -1578,25 +1585,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./figures/2DSpectrogram.png> <./figures/3DSpectrogram.png>]
-<./figures/sonicphoto.png, id=450, 569.12625pt x 360.59718pt>
+[10 <./figures/MathFourier.png>]
+<./figures/sonicphoto.png, id=472, 569.12625pt x 360.59718pt>
 File: ./figures/sonicphoto.png Graphic file (type png)
 
 <use ./figures/sonicphoto.png>
 Package pdftex.def Info: ./figures/sonicphoto.png used on input line 92.
 (pdftex.def)             Requested size: 401.18387pt x 254.19904pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10 <./figures/MathFourier.png>]
-<./figures/metasynth.png, id=461, 853.68938pt x 424.58624pt>
+<./figures/metasynth.png, id=475, 853.68938pt x 424.58624pt>
 File: ./figures/metasynth.png Graphic file (type png)
 
 <use ./figures/metasynth.png>
@@ -1635,7 +1632,7 @@ Chapter 5.
 
 ]
 Chapter 6.
-<./figures/initialbrainstorm.png, id=497, 1195.46625pt x 1157.32375pt>
+<./figures/initialbrainstorm.png, id=512, 1195.46625pt x 1157.32375pt>
 File: ./figures/initialbrainstorm.png Graphic file (type png)
 
 <use ./figures/initialbrainstorm.png>
@@ -1660,7 +1657,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19] <./figures/komponenter.png, id=517, 578.16pt x 457.71pt>
+[19] <./figures/komponenter.png, id=532, 578.16pt x 457.71pt>
 File: ./figures/komponenter.png Graphic file (type png)
 
 <use ./figures/komponenter.png>
@@ -1670,7 +1667,7 @@ Package pdftex.def Info: ./figures/komponenter.png used on input line 63.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/componenttest.jpg, id=518, 3998.94pt x 2999.205pt>
+<./figures/componenttest.jpg, id=533, 3998.94pt x 2999.205pt>
 File: ./figures/componenttest.jpg Graphic file (type jpg)
 
 <use ./figures/componenttest.jpg>
@@ -1680,15 +1677,15 @@ Package pdftex.def Info: ./figures/componenttest.jpg used on input line 69.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/sketchmock.jpg, id=521, 1541.76pt x 1670.24pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/sketchmock.jpg, id=536, 1541.76pt x 1670.24pt>
 File: ./figures/sketchmock.jpg Graphic file (type jpg)
 
 <use ./figures/sketchmock.jpg>
 Package pdftex.def Info: ./figures/sketchmock.jpg used on input line 93.
 (pdftex.def)             Requested size: 401.18387pt x 434.60896pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1698,13 +1695,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21 <./figures/komponenter.png>]
-<./figures/Papermockoff.jpg, id=536, 1509.64pt x 963.6pt>
+<./figures/Papermockoff.jpg, id=551, 1509.64pt x 963.6pt>
 File: ./figures/Papermockoff.jpg Graphic file (type jpg)
 
 <use ./figures/Papermockoff.jpg>
@@ -1728,15 +1728,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./figures/sketchmock.jpg>]
-<./figures/fftestimage.png, id=548, 1000.48781pt x 706.13812pt>
+<./figures/fftestimage.png, id=563, 1000.48781pt x 706.13812pt>
 File: ./figures/fftestimage.png Graphic file (type png)
 
 <use ./figures/fftestimage.png>
 Package pdftex.def Info: ./figures/fftestimage.png used on input line 128.
 (pdftex.def)             Requested size: 401.18387pt x 283.1506pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1748,23 +1745,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24 <./figures/Papermockoff.jpg>]
-<./figures/Finaldesignfinal.jpg, id=557, 1284.8pt x 611.28375pt>
-File: ./figures/Finaldesignfinal.jpg Graphic file (type jpg)
-
-<use ./figures/Finaldesignfinal.jpg>
-Package pdftex.def Info: ./figures/Finaldesignfinal.jpg used on input line 153.
-
-(pdftex.def)             Requested size: 401.18387pt x 190.87646pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./figures/Finaldesignfinal.jpg Graphic file (type jpg)
-<use ./figures/Finaldesignfinal.jpg>
-Package pdftex.def Info: ./figures/Finaldesignfinal.jpg used on input line 163.
-
-(pdftex.def)             Requested size: 401.18387pt x 190.87646pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1772,6 +1752,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25 <./figures/fftestimage.png>]
+<./figures/Finaldesignfinal.jpg, id=578, 1284.8pt x 611.28375pt>
+File: ./figures/Finaldesignfinal.jpg Graphic file (type jpg)
+
+<use ./figures/Finaldesignfinal.jpg>
+Package pdftex.def Info: ./figures/Finaldesignfinal.jpg used on input line 153.
+
+(pdftex.def)             Requested size: 401.18387pt x 190.87646pt.
+File: ./figures/Finaldesignfinal.jpg Graphic file (type jpg)
+ <use ./figures/Finaldesignfinal.jpg>
+Package pdftex.def Info: ./figures/Finaldesignfinal.jpg used on input line 163.
+
+(pdftex.def)             Requested size: 401.18387pt x 190.87646pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:finalinterfacesketch3grey' on page 26 undefined o
+n input line 175.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1779,16 +1779,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26 <./figures/Finaldesignfinal.jpg>]
-
-LaTeX Warning: Reference `fig:finalinterfacesketch3grey' on page 27 undefined o
-n input line 175.
-
-<./figures/Flowdiagram.png, id=572, 845.0772pt x 597.9138pt>
+<./figures/Flowdiagram.png, id=587, 845.0772pt x 597.9138pt>
 File: ./figures/Flowdiagram.png Graphic file (type png)
 
 <use ./figures/Flowdiagram.png>
 Package pdftex.def Info: ./figures/Flowdiagram.png used on input line 179.
 (pdftex.def)             Requested size: 401.18387pt x 283.84778pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (sections/implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1796,12 +1796,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./figures/Flowdiagram.png>] [28
+[27]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./figures/Flowdiagram.png>]
+Chapter 7.
+[29
 
 
 ]
-Chapter 7.
-[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1820,77 +1827,86 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 8.
-<./figures/Comb_filter.png, id=606, 321.6015pt x 259.56975pt>
+<./figures/Output.png, id=621, 284.262pt x 98.16675pt>
+File: ./figures/Output.png Graphic file (type png)
+
+<use ./figures/Output.png>
+Package pdftex.def Info: ./figures/Output.png used on input line 7.
+(pdftex.def)             Requested size: 200.59193pt x 69.27347pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<./figures/Pdpictures.png, id=624, 246.32025pt x 149.358pt>
+File: ./figures/Pdpictures.png Graphic file (type png)
+
+<use ./figures/Pdpictures.png>
+Package pdftex.def Info: ./figures/Pdpictures.png used on input line 17.
+(pdftex.def)             Requested size: 200.59193pt x 121.63338pt.
+ [33 <./figures/Output.png>]
+<./figures/Imageprocessing.png, id=634, 461.3235pt x 301.72725pt>
+File: ./figures/Imageprocessing.png Graphic file (type png)
+
+<use ./figures/Imageprocessing.png>
+Package pdftex.def Info: ./figures/Imageprocessing.png used on input line 27.
+(pdftex.def)             Requested size: 200.59193pt x 131.19504pt.
+
+<./figures/Comb_filter.png, id=635, 321.6015pt x 259.56975pt>
 File: ./figures/Comb_filter.png Graphic file (type png)
 
 <use ./figures/Comb_filter.png>
-Package pdftex.def Info: ./figures/Comb_filter.png used on input line 4.
+Package pdftex.def Info: ./figures/Comb_filter.png used on input line 36.
 (pdftex.def)             Requested size: 200.59193pt x 161.90195pt.
 
-<./figures/Arduino_normalization.png, id=607, 305.943pt x 112.62074pt>
+<./figures/Arduino_normalization.png, id=636, 305.943pt x 112.62074pt>
 File: ./figures/Arduino_normalization.png Graphic file (type png)
 
 <use ./figures/Arduino_normalization.png>
 Package pdftex.def Info: ./figures/Arduino_normalization.png used on input line
- 9.
+ 46.
 (pdftex.def)             Requested size: 200.59193pt x 73.84015pt.
 
-<./figures/Inside_arduino.png, id=608, 549.252pt x 283.65974pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34 <./figures/Pdpictures.png> <./figures/Imageprocessing.png>]
+<./figures/Inside_arduino.png, id=643, 549.252pt x 283.65974pt>
 File: ./figures/Inside_arduino.png Graphic file (type png)
 
 <use ./figures/Inside_arduino.png>
-Package pdftex.def Info: ./figures/Inside_arduino.png used on input line 14.
+Package pdftex.def Info: ./figures/Inside_arduino.png used on input line 60.
 (pdftex.def)             Requested size: 200.59193pt x 103.59337pt.
 
-<./figures/Normalize.png, id=609, 446.26724pt x 203.5605pt>
+<./figures/Normalize.png, id=644, 446.26724pt x 203.5605pt>
 File: ./figures/Normalize.png Graphic file (type png)
 
 <use ./figures/Normalize.png>
-Package pdftex.def Info: ./figures/Normalize.png used on input line 19.
+Package pdftex.def Info: ./figures/Normalize.png used on input line 67.
 (pdftex.def)             Requested size: 200.59193pt x 91.49576pt.
-
-<./figures/Imageprocessing.png, id=610, 461.3235pt x 301.72725pt>
-File: ./figures/Imageprocessing.png Graphic file (type png)
-
-<use ./figures/Imageprocessing.png>
-Package pdftex.def Info: ./figures/Imageprocessing.png used on input line 24.
-(pdftex.def)             Requested size: 200.59193pt x 131.19504pt.
-
-<./figures/Output.png, id=611, 284.262pt x 98.16675pt>
-File: ./figures/Output.png Graphic file (type png)
-
-<use ./figures/Output.png>
-Package pdftex.def Info: ./figures/Output.png used on input line 29.
-(pdftex.def)             Requested size: 200.59193pt x 69.27347pt.
-
-<./figures/Pdpictures.png, id=612, 246.32025pt x 149.358pt>
-File: ./figures/Pdpictures.png Graphic file (type png)
-
-<use ./figures/Pdpictures.png>
-Package pdftex.def Info: ./figures/Pdpictures.png used on input line 34.
-(pdftex.def)             Requested size: 200.59193pt x 121.63338pt.
-) (sections/finalprototype.tex [33]
+) (sections/finalprototype.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./figures/Comb_filter.png> <./figures/Arduino_normalization.png> <./figure
-s/Inside_arduino.png> <./figures/Normalize.png>]
+[35 <./figures/Comb_filter.png> <./figures/Arduino_normalization.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./figures/Imageprocessing.png> <./figures/Output.png> <./figures/Pdpicture
-s.png>] [36
-
-
-]
+[36 <./figures/Inside_arduino.png> <./figures/Normalize.png>]
 Chapter 9.
-) (sections/evaluation.tex [37] [38
+) (sections/evaluation.tex [37
+
+
+] [38
 
 
 ]
@@ -1943,7 +1959,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: AB75E009373E530EE37CA9424098A616;3729.
+(rerunfilecheck)             Checksum: 619F23B028C4D46E1B0EE832BA22C020;3929.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1959,24 +1975,25 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24989 strings out of 493673
- 448999 string characters out of 3141503
- 802077 words of memory out of 3000000
- 27606 multiletter control sequences out of 15000+200000
- 53629 words of font info for 90 fonts, out of 3000000 for 9000
+ 25028 strings out of 493673
+ 450046 string characters out of 3141503
+ 802108 words of memory out of 3000000
+ 27635 multiletter control sequences out of 15000+200000
+ 53943 words of font info for 91 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 64i,14n,76p,1053b,2771s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
-\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecs
-s1000.pk> <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pa
-latino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/u
-plr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.p
-fb>
-Output written on master.pdf (61 pages, 5139059 bytes).
+ 64i,14n,76p,1053b,2772s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ectt1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontnam
+e/8r.enc} <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecss1000.pk> <C:\Users\MarkusKristian\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1000.pk><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
+/palatino/uplri8a.pfb>
+Output written on master.pdf (61 pages, 5157892 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
- 586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 834 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 610 words of extra memory for PDF output out of 10000 (max. 10000000)
 
