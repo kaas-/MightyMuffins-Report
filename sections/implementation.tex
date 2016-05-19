@@ -9,16 +9,50 @@ Furthermore three different filters have been constructed and implemented using 
 Arduino is a micro controller that allows the user to code and create their own circuits using various components, this allows for a wide range of purposes. In this project the Arudino is responsible for the physical interface which the user has available. 
 
 \subsection{Audio filters}
-In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine delayed versions of their input signal filter out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}.
+In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine their input signal with delayed and modified versions of themselves and then filters out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}. In this case the amplification can continue forever, no matter if you feed the filter a new input signal or not. This continuous amplification is called an unstable filter. Inversely, a stable filter is one, where the response fades over time, tending towards zero. This way, you make sure that the response of the input signal will end, depending on how fast the response signal fades.
 
-Filters can be put into five basic categories:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{feedforward}
+\caption{Structure of basic feedforward filter.}
+\label{fig:feedforward}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{feedback}
+\caption{Structure of basic feedback filter.}
+\label{fig:feedback}
+\end{figure}
+
+Filters can be put into three basic categories:
 \begin{itemize}
-\item \textbf{Lowpass} which lets lower frequencies pass, and rejects higher frequencies.
-\item \textbf{Highpass} which lets higher frequencies pass, and rejects lower frequencies.
-\item \textbf{Bandpass} which lets frequencies between two thresholds pass, and rejects frequencies outside them.
-\item \textbf{Bandreject} which rejects frequencies between two thresholds, and lets frequencies outside them pass.
-\item \textbf{Allpass} which lets all frequencies pass \cite{zolzer2011dafx}.
+\item \textbf{Pass filters} which lets defined frequencies pass, and reject the remaining. Examples of this type of filter are low-pass, bandpass and comb filters.
+\item \textbf{Reject Filters} which is the inverse of a Pass filter. With this, defined frequencies are rejected and lets the remaining frequencies pass. Bandreject filters, also known as notch filters, are an example of this.
+\item \textbf{Equaliser filters} which changes the amplitude of defined frequencies. This amplitude change can either be positive or negative, depending on the specific implementation of the filter. 
 \end{itemize}
+
+The filters used in the project is a bandpass, comb and high-shelf.
+
+The comb filter used is a simple feedback filter, of the structure seen in Figure \ref{fig:feedback}. The summation of the delays creates constructive and destructive interference on the signal. This interference is at regular intervals, which gives the curve of the frequency response its distinct appearance, as seen in Figure \ref{fig:comb}. It is used to give an echo-like effect unto the input signal.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{comb}
+\caption{Frequency response curve of comb filter.}
+\label{fig:comb}
+\end{figure}
+
+The two other filters used are structured as biquads. \todo{CONTINUE FROM HERE}
+
+The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{bandpass}
+\caption{Frequency response curve of bandpass filter.}
+\label{fig:bandpass}
+\end{figure}
 
 \section{Code overview}\label{sec:codeoverview}
 	\subsection{Image processing}\label{sub:imageprocessing}
