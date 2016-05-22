@@ -54,7 +54,7 @@ The bandpass filter works by letting certain frequencies pass through, while rej
 \label{fig:bandpass}
 \end{figure}
 
-\section{Code overview}\label{sec:codeoverview}
+\section{Software tools}\label{sec:softwareTools}
 	\subsection{Image processing}\label{sub:imageprocessing}
 	As the project revolves around pictures being audiolised, various image processing methods have been implemented. To get an image loaded into Pure data the library gem have been imported and applied. In gem it is possible to go through each pixel getting its RGB value as three different values. This is done using a double nested for-loop that is constructed using the expr function in Pure data, which allows for construction of consecutive if-statements. The first if-statement gives an output that is increased by 0.001 for every cycle if the input value is less than one. The second if-statement checks if the input value is greater or equal to one, if that is the case it adds 0.01 to a value starting at zero, which is then outputted. The last if-statement checks if the second input is greater or equal to 1, if that is the case subtract 1 from the value of the second input.
 	
@@ -72,4 +72,11 @@ The bandpass filter works by letting certain frequencies pass through, while rej
 
 	
 	\subsection{Circuit diagram}\label{sub:circuitdiagram}
-	The interface works by utilising 3 silders, placed in the lower half of the box, which sends their output into the Arduino analogue ports, which is then interpreted by the code, which will be elaborated upon in Chapter \ref{ch:codeoverview} 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{circuit}
+\caption{The circuit diagram.}
+\label{fig:circuit}
+\end{figure}
+	
+	The interface works by utilising an Arduinos 5 Volt power supply and 3 slide potentiometer, placed in the lower half of the box, which send their output into the Arduino analogue ports, which is then interpreted by the code, which will be elaborated upon in Chapter \ref{ch:codeoverview} 
