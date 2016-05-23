@@ -9,8 +9,8 @@
 \label{Fig:Output}
 \end{figure}
 
-\section{Image processing code}
-When importing pictures into pure data a message called \texttt{open} is used. It takes a picture from a specific location and outputs it to \texttt{pix\_image} which is the object that is used for preparing an image for further use. \testtt{pix\_image} sends the image into the \texttt{pix\_draw} which draws the image directly onto the screen. After the images is drawn, it is then sent into the \texttt{pd imageprocessing} block which can be seen in Figure \ref{Fig:Imageprocessing}.
+\section{Audiolisation code}
+When importing pictures into Pure Data a message called \texttt{open} is used. It takes a picture from a specific location and outputs it to \texttt{pix\_image} which is the object that is used for preparing an image for further use. \texttt{pix\_image} sends the image into the \texttt{pix\_draw} which draws the image directly onto the screen. After the images is drawn, it is then sent into the \texttt{pd imageprocessing} block which can be seen in Figure \ref{Fig:Imageprocessing}.
 
 \begin{figure}
 \centering
@@ -19,8 +19,12 @@ When importing pictures into pure data a message called \texttt{open} is used. I
 \label{Fig:pdpicture}
 \end{figure}
 
-Inside the \texttt{pd imageprocessing} block a double nested for loop is implemented using an \texttt{expr} function in pure data. Through the use of three if statements, and taking advantage of the dataflow nature of Pure Data, the equivalent of a nested for loop is created which examines each pixel in the input image according to their x- and y-coordinate. The loop goes through 0 to 1. When it reaches 1 it adds 0.01 to another variable and resets to 0 to start over. When the second variable hits 1 it resets to 0 and the whole process starts over. The delay is placed so that the program doesn't preform a stack overflow when handling the if statements. 
-As the if statements process data, a set of sliders have been placed to visualise the current pixel position, these sliders move in real time as the image is processed. The information contained in the pixel at position corresponding to these variables is then outputted to the \texttt{pix\_data} object, which takes a pixel position and a gem list and outputs the values of the RGB channels into three different numbers which is then outputted. 
+The inside of the \texttt{pd imageprocessing} block can be seen on Figure \ref{Fig:Imageprocessing}. A nested for-loop is implemented using an \texttt{expr} function. The for-loop is created using three if-statements, and taking advantage of the dataflow nature of Pure Data, which examines each pixel in the input image according to their x- and y-coordinate.
+
+
+
+The loop goes from 0 to 1 with an interval of 0.001. When it reaches 1 it adds 0.01 to the variable \$f2 and resets \$f1 to 0 to start over. When \$f2 hits 1 it resets to 0 and the whole process starts over. The delay is implemented so the program does not preform a stack overflow when handling the if-statements. 
+As the if-statements process the data, a set of sliders have been placed to visualise the current pixel position. These sliders move in real time as the image is processed. The information contained in the pixel at current position is outputted to the \texttt{pix\_data} object. It takes a pixel position and the image from \texttt{pix\_image} and outputs the values of the RGB channels into three different numbers boxes which is then outputted out of the \texttt{pd imageprocessing} block. The output of the \texttt{pd imageprocessing} block is inputted into the \texttt{pd output} block. It takes the RGB values and converts it into a cosine wave frequency by multiplying the RGB value by 500 to make sure the frequency is within the range of human hearing \cite{steiglitz1997digital}. It sends the output to the three different filters; bandpass, comb and high-shelf which are explained in Subsection \ref{sub:audiofilters}. The output of the filters bandpass and high-shelf are coefficients, which are used by the biquad to create the filter effect. All three filters are added together and sent to the \texttt{dac~} object which outputs the audio to the speakers. 
 
 \begin{figure}
 \centering
