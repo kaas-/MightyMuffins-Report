@@ -6,7 +6,7 @@ The tools used in this project is an Arduino and the software Pure Data. An Ardu
 
 Pure Data is a visual data flow programming language \cite{puredata} written in C, which is designed for processing audio signals. Pure Data programs, called patches, are written using blocks that represent variable definitions, methods, or other patches. These blocks have inlets and outlets that are then connected to each other to determine the flow of data through the program. Two third party libraries are used with Pure Data; Pduino, which is used to interface with the Arduino, and Gem which adds image processing capabilities to Pure Data. The Firmata firmware is loaded unto the Arduino to enable the Pduino library to communicate with the Arduino.
 
-\subsection{Audio filters}
+\subsection{Audio filters}\label{sub:audiofilters}
 In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine their input signal with delayed and modified versions of themselves and then filters out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}. In this case the amplification can continue forever, no matter if you feed the filter a new input signal or not. This continuous amplification is called an unstable filter. Inversely, a stable filter is one, where the response fades over time, tending towards zero. This way you make sure that the response of the input signal will end, depending on how fast the response signal fades.
 
 \begin{figure}
@@ -35,7 +35,7 @@ The comb filter used is a simple feedback filter, of the structure seen in Figur
 \end{figure}
 
 The two other filters used are structured as biquads. This structure consists of two feedforward delays, two feedback delays and a coefficient that is multiplied directly unto the input signal. These five values are then summed to be the output signal. The equation for this operation is 
-\[y(n)=b_o \cdot x(n)+b_1 \cdot x(n-1)+b_2 \cdot (n-2)-a_1 \cdot x(n-1)-a_2 \cdot x(n-2)\]
+\[y(n) = b_o \cdot x(n) + b_1 \cdot x(n-1) + b_2 \cdot (n-2) - a_1 \cdot x(n-1) - a_2 \cdot x(n-2)\] \cite{Redmon2003}
 where \(x(n)\) is the raw input signal, \(x(n-1)\) is the input signal delayed by one sample, and \(x(n-2)\) is the input signal delayed by two samples. The coefficient \(b_0\) is for the raw input signal, \(b_1\) and \(b_2\) are the coefficients for the feedforward delays, \(a_1\) and \(a_2\) are the coefficients for the feedback delays. This structure, called Direct Form 1, is visualised in Figure \ref{fig:biquadform1}.
 
 \begin{figure}
@@ -45,7 +45,22 @@ where \(x(n)\) is the raw input signal, \(x(n-1)\) is the input signal delayed b
 \label{fig:biquadform1}
 \end{figure}
 
-A more 
+In Direct Form 1, you can reverse the position of the feedforward and -back delays by first splitting the summations. Then their order is switched, so that the feedback delays come first and the feedforward delays come second. This creates two pairs of the delays \(x(n-1)\) and \(x(n-2\) that are right after each other in operation. Therefore, one of the pairs are redundant, as the two pairs store the same information. Because of this, one of the pairs are removed \cite{Redmon2003}. This whole process can be seen in Figure \ref{fig:biquadtransform}. The new biquad structure is called Direct Form 2. The equation for this form is\cite{Nederland2016}:
+\[y(n) = b_0 \cdot w(n) + b_1 \cdot w(n-1) + b_2 \cdot w(n-2)\]
+\[w(n) = x(n) - a_1 \cdot w(n-1) - a_2 \cdot w(n_2)\]
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{directform2}
+\caption{Biquad transformation from Direct Form 1 to Direct Form 2 \cite{Redmon2003}.}
+\label{fig:biquadtransform}
+\end{figure}
+
+Direct Form 2 is better when working with floating points \cite{Redmon2003}. This is because it only saves two memory locations for the delays \(x(n-1)\) and \(x(n-2)\), which is more efficient than Direct Form 1 that saves four memory locations for its delays. Pure Data uses the Direct Form 2 structure. However, Pure Data defines the biquad differently, using the equation:
+\[y(n) = b_0 \cdot w(n) + b_1 \cdot w(n-1) + b_2 \cdot w(n-2)\]
+\[w(n) = x(n) + a_1 \cdot w(n-1) + a_2 \cdot w(n_2)\]
+
+Because of this, the coefficients \(a_1\) and \(a_2\) are actually inversed, compared to the normal definition.
 
 The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected.
 
@@ -55,6 +70,8 @@ The bandpass filter works by letting certain frequencies pass through, while rej
 \caption{Frequency response curve of bandpass filter.}
 \label{fig:bandpass}
 \end{figure}
+
+
 
 \section{Software tools}\label{sec:softwareTools}
 	\subsection{Image processing}\label{sub:imageprocessing}
