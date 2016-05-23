@@ -57,7 +57,7 @@ The \texttt{pduino/arduino} object sends all of its data into its single outlet.
 \label{Fig:Inside_arduino}
 \end{figure}
 
-The user defined parameters for the filters need coefficients in various ranges. To achieve this, a patch called \texttt{pd normalization} (see Figure \ref{Fig:Normalize}) is used to normalize the numbers from the analog inlets on the Arduino from a range of zero to one to a different range, depending on the filter. \texttt{pd normalization} has three inlets; one for the raw data, one for the original data range, and one for the desired range. The patch then applies the equation $\frac{max'-min'}{max-min}\cdot (data-max)+max'$ where max' and min' make up the desired range, and max and min make up the original range. The result is passed to the outlet which provide one of the filter coefficients for each filter. 
+The user defined parameters for the filters need coefficients in various ranges. To achieve this, a patch called \texttt{pd normalization} (see Figure \ref{Fig:Normalize}) is used to normalize the numbers from the analog inlets on the Arduino from a range of zero to one to a different range, depending on the filter. \texttt{pd normalization} has three inlets; one for the raw data, one for the original data range, and one for the desired range. The patch then applies the equation $\frac{max'-min'}{max-min}\cdot (data-max)+max'$ where max' and min' make up the desired range, and max and min make up the original range. The result is passed to the outlet which provide one of the filter coefficients for each filter. For the comb filter (see Figure \ref{Fig:Comb_filter}) the coefficient is the delay which altered when the user operates the slide potentiometer. 
 
 \begin{figure}
 \centering
