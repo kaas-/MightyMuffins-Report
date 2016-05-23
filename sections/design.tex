@@ -41,7 +41,7 @@ Each of these peripheral devices makes the user interact with the prototype diff
 
 The button's functionality is it can be clicked. The button have two states: low and high. The low state is when the button is not clicked, and the high state is when the button is being clicked. This means that a system using a button will have programmed states, which will be cycled through in a predetermined or random direction. In the case that the button (telegraph or otherwise) is used to increase or decrease a given effect in steps, it presents a lack user control for fine adjustments. Furthermore, if the user wishes to quickly move from one end of the spectrum to the other one button must be pressed repeatedly which can be straining.
 
-Variable resistors allow a system to have a position between the two extremes of low and high. This allows the system to have more fluent control than a simple binary choice of on or off. There are multiple variable resistors to choose from, which changes the user's interaction with the given device depending on the used peripheral device.  They all function in a fundamentally similar way. . The question that remains is then which is more usable in our context. This can be evaluated using the notions of perceived affordance, feedforward, and feedback as defined by Norman \cite{Norman:1999:ACD:301153.301168}.
+Variable resistors allow a system to have a position between the two extremes of low and high. This allows the system to have more fluent control than a simple binary choice of on or off. There are multiple variable resistors to choose from, which changes the user's interaction with the given device depending on the used peripheral device.  They all function in a fundamentally similar way. The question that remains is then which is more usable in our context. This can be evaluated using the notions of perceived affordance, feedforward, and feedback as defined by Norman \cite{Norman:1999:ACD:301153.301168}.
 
 Pressure sensors react to being pressured, such as from touching and pushing. More pressure equals to a higher position on the scale. The pressure sensor affords pushing, however, it does not provide any feedforward regarding the fact that it is a pressure sensor. This means that any information the user receives from feedback, that could potentially enlighten them with this fact is from the software or a label. Disregarding that hurdle, the user receives feedback from the sensation of pressure they apply to the sensor. 
 
@@ -55,7 +55,7 @@ Unlike the previously mentioned variable resistors that all have a clear low and
 Any of these devices is used as a variable controller for the different effects. Depending on which device is chosen, the integration for the user will be different. This will be tested in the iterations of the prototype and discussed further to make sure that the interface is user-friendly and easy to understand. 
 
 \section{Electrical Component Test}\label{sec:comptest}
-To figure out which electrical components the users prefers and think is the most intuitive to use, an electrical component test was conducted. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on figure  \ref{fig:componenttest}.
+To figure out which electrical components the users prefers and think is the most intuitive to use, an electrical component test was conducted. All the previous mentioned electronic components were used in the test, though there was two different buttons and 3 different potentiometers. All the different components can can be seen on Figure \ref{fig:komponenter}. These components were all mounted on a cardboard plate as seen on Figure  \ref{fig:componenttest}.
 
 \begin{figure}[!h] 
 \centering
@@ -70,7 +70,7 @@ To figure out which electrical components the users prefers and think is the mos
 \end{figure}
 
 The test was conducted on 10 participants, all fellow students from Medialogy. The participants were explained by 'Test Facilitator 1' how each component worked and how to interact with them. They were told that they had to use all of the components one at a time in a numeral order and think out loud when using the components. 'Test Facilitator 2' turned the volume of the music up and down, all depending on how the participant used the component.
-Results, as can be seen on table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. Based on this result and the evaluation made in Section~\ref{sec:periphealdevices} a new design was created.
+Results, as can be seen on Table \ref{tab:electritest}, showed the participants preferred using the slider when changing the volume of the music. Based on this result and the evaluation made in Section \ref{sec:periphealdevices} a new design was created.
 
 \begin{table}[!h]
 \centering
@@ -85,7 +85,7 @@ Amount of votes & 1 & 0 & 3 & 0 & 0 & 0 & 0 & 6 & 0 \\ \hline
 
 
 \section{The chosen sketch}\label{sec:thechosensketch}
-Based on feedback from the components test, an interface design sketch were made to make a paper mock-up test, the sketch can be seen on figure \ref{fig:sketchmock}. 
+Based on feedback from the components test, an interface design sketch were made to make a paper mock-up test, the sketch can be seen on Figure \ref{fig:sketchmock}. 
 
 \begin{figure}[!h] 
 \centering
@@ -96,7 +96,7 @@ Based on feedback from the components test, an interface design sketch were made
 The chosen sketch consists of an on/off button, two sliders with two different effects and a button that changes the state of the effects. When the device is turned on it automatically goes into state one which turns on 'Effect 1'. When the user presses the button, the device switches to state two, which turns off 'Effect 1' and turns on 'Effect 2'. When pressed for the second time, the device goes into state three where both 'Effect 1' and 'Effect 2' is turned on simultaneously. If pressed again, the circuit goes back to state one. Slider one (the left one) controls the intensity of 'Effect 1' and is only active in state one and three. Slider two (the right one) also controls the intensity but for 'Effect 2' and is active under state two and three.
 
 \section{Interface low-fi test}\label{sec:lowfitest}
-The chosen sketch was made into a paper mock-up to test the percieved affordance and the feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. The paper mock-up can be seen on figure \ref{fig:Papermockoff}.
+The chosen sketch was made into a paper mock-up to test the percieved affordance and the feedforward. Since it was a paper mock-up, no electronic components were used. What should have been the audio feedback was replaced with an drawing of a light bulb in order for understanding the intention of changing the intensity of an object. The paper mock-up can be seen on Figure \ref{fig:Papermockoff}.
 
 \begin{figure}[!h] 
 \centering
@@ -120,7 +120,7 @@ The mock-up was tested on 6 fellow Medialogy students. 'Test Facilitator 1' expl
 Results showed that it was clear that to the user that he/she had to use the slider to change the intensity of the light bulb. However, switching between the states of which slider was in use, proved to be difficult for the user since their perception the feedforward was not clear enough. Some users suggested the use of imagery for better understanding of the interface. Since the feedforward of the slider was not sufficient enough, a feedforward test was conducted.
 
 \section{Feedforward test}\label{sec:fftest}
-Eight different designs for the slider was made, as can be seen on the figure \ref{fig:fftestimage}.
+Eight different designs for the slider was made, as can be seen on the Figure \ref{fig:fftestimage}.
 
 \begin{figure}[!h] 
 \centering
@@ -144,16 +144,16 @@ Statistically speaking, the most preferred feedforward was design five which had
 Even though design three and design five received almost the same amount of votes, the design team choose to go with the fifth design. The prototype will be expanded of this design and it will be taken into further iterations of the performance testing. 
 
 \section{Storyboard}\label{sec:storyboard}
-The picture shown in \ref{fig:Flowdiagram} shows a narrative story board, explaining how the product could be used in contex. The setting of the story board is at an art museum. The user is a visitor at the museum, he walks by a large picture of a woman, in front of the picture is a box with sliders in top ( the final product \ref{fig:finalinterfacesketch3grey} ) and speakers above the picture. The user reads the description placed on the box and starts to manipulate with the sliders. The result is a user made sound coming of the speakers, and the user is happy with his creation. 
+The picture shown in \ref{fig:Flowdiagram} shows a narrative story board, explaining how the product could potentially be used in context. The setting of the story board is at an art museum. The user is a visitor at the museum, he walks by a large picture of a woman, speakers beside the picture and a box with sliders. The user reads the description placed on the box and starts to manipulate with the sliders. The result is a user made sound coming of the speakers, and the user is happy with his creation. 
 
 \begin{figure}[!h] 
 \centering
 \includegraphics[width=1\textwidth]{Flowdiagram}
-\caption{\label{fig:Flowdiagram} A narrative story board of the finish product,  in context use.}
+\caption{\label{fig:Flowdiagram} A narrative story board of the finish product used in context.}
 \end{figure}
 
 \section{Final Prototype}\label{sec:finaldesign final}
-The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made. From section \ref{sec:lowfitest} it was determined to remove the on and off button as well as giving the user the possibility to switch between the different states in order to avoid confusion and to obtain a more simplistic design. Since the button that decided which slider was active was removed, all three sliders are constantly active. It was also decided to use three sliders to get three different effects, all based on the choices made in the initial brainstorm from section \ref{sec:initialbrainstorm}. The final design can be seen on figure \ref{fig:finaldesignsketch3grey}.
+The design team elaborated on the earlier designs sketches and with the feedback from the users design tests a final design was made. From Section \ref{sec:lowfitest} it was determined to remove the on and off button as well as giving the user the possibility to switch between the different states in order to avoid confusion and to obtain a more simplistic design. Since the button that decided which slider was active was removed, all three sliders are constantly active. It was also decided to use three sliders to get three different effects, all based on the choices made in the initial brainstorm from Section \ref{sec:initialbrainstorm}. The final design can be seen on Figure \ref{fig:finaldesignsketch3grey}.
 
 \begin{figure}[!h] 
 \centering
