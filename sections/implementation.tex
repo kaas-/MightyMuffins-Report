@@ -5,6 +5,12 @@
 !Anna rettelse. Tjek om ok eller ej!
 The tools used in this project is an Arduino and the software Pure Data. 
 An Arduino is a micro controller that allows the user to code and create their own circuits using various components. The Arudino is responsible for the control of the physical interface which the user has available.
+
+
+!!Rasmus' stuff!!
+Pure Data is a graphical dataflow programming language written in C, which is designed for processing audio signals. Pure Data programs, called patches, are written using blocks that represent variable definitions, methods, or other patches. These blocks have inlets and outlets that are then connected to each other to determine the flow of data through the program. Two third party libraries are used with Pure Data; Pduino, which is used to interface with the Arduino, and Gem which adds image processing capabilities to Pure Data. The Firmata firmware is loaded unto the Arduino to enable the Pduino library to communicate with the Arduino.
+!!Rasmus' stuff!!
+
 Pure data is a C/C++ based coding language which utilises pre-constructed blocks of code which have to be connected to one another. Pure data is the code implemented in the project which is responsible for the audio and image processing. The image processing is conducted by utilising a library called Gem. 
 A library called Firmata allows the Arduino to communicate with the software on the laptop.
 
@@ -17,14 +23,7 @@ Furthermore three different filters have been constructed and implemented using 
 An Arduino is a micro controller that allows the user to code and create their own circuits using various components, this allows for a wide range of purposes. In this project the Arudino is responsible for the physical interface which the user has available. 
 
 \subsection{Audio filters}
-In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine their input signal with delayed and modified versions of themselves and then filters out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}. In this case the amplification can continue forever, no matter if you feed the filter a new input signal or not. This continuous amplification is called an unstable filter. Inversely, a stable filter is one, where the response fades over time, tending towards zero. This way, you make sure that the response of the input signal will end, depending on how fast the response signal fades.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{feedforward}
-\caption{Structure of basic feedforward filter.}
-\label{fig:feedforward}
-\end{figure}
+In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine their input signal with delayed and modified versions of themselves and then filters out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}. In this case the amplification can continue forever, no matter if you feed the filter a new input signal or not. This continuous amplification is called an unstable filter. Inversely, a stable filter is one, where the response fades over time, tending towards zero. This way you make sure that the response of the input signal will end, depending on how fast the response signal fades.
 
 \begin{figure}
 \centering
@@ -51,7 +50,18 @@ The comb filter used is a simple feedback filter, of the structure seen in Figur
 \label{fig:comb}
 \end{figure}
 
-The two other filters used are structured as biquads. \todo{CONTINUE FROM HERE}
+The two other filters used are structured as biquads. This structure consists of two feedforward delays, two feedback delays and a coefficient that is multiplied directly unto the input signal. These five values are then summed to be the output signal. The equation for this operation is 
+\[y(n)=b_o \cdot x(n)+b_1 \cdot x(n-1)+b_2 \cdot (n-2)-a_1 \cdot x(n-1)-a_2 \cdot x(n-2)\]
+where \(x(n)\) is the raw input signal, \(x(n-1)\) is the input signal delayed by one sample, and \(x(n-2)\) is the input signal delayed by two samples. The coefficient \(b_0\) is for the raw input signal, \(b_1\) and \(b_2\) are the coefficients for the feedforward delays, \(a_1\) and \(a_2\) are the coefficients for the feedback delays. This structure, called Direct Form 1, is visualised in Figure \ref{fig:biquadform1}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{biquadform1}
+\caption{Biquad Direct Form 1.}
+\label{fig:biquadform1}
+\end{figure}
+
+A more 
 
 The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected.
 
