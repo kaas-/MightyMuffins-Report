@@ -2,25 +2,9 @@
 \chapter{Implementation}\label{ch:implementation}
 
 \section{Tools used}\label{sec:toolsused}
-!Anna rettelse. Tjek om ok eller ej!
-The tools used in this project is an Arduino and the software Pure Data. 
-An Arduino is a micro controller that allows the user to code and create their own circuits using various components. The Arudino is responsible for the control of the physical interface which the user has available.
+The tools used in this project is an Arduino and the software Pure Data. An Arduino is a micro controller that allows the user to code and create their own circuits using various components. The Arudino is responsible for the control of the physical interface which the user has available.
 
-
-!!Rasmus' stuff!!
-Pure Data is a graphical dataflow programming language written in C, which is designed for processing audio signals. Pure Data programs, called patches, are written using blocks that represent variable definitions, methods, or other patches. These blocks have inlets and outlets that are then connected to each other to determine the flow of data through the program. Two third party libraries are used with Pure Data; Pduino, which is used to interface with the Arduino, and Gem which adds image processing capabilities to Pure Data. The Firmata firmware is loaded unto the Arduino to enable the Pduino library to communicate with the Arduino.
-!!Rasmus' stuff!!
-
-Pure data is a C/C++ based coding language which utilises pre-constructed blocks of code which have to be connected to one another. Pure data is the code implemented in the project which is responsible for the audio and image processing. The image processing is conducted by utilising a library called Gem. 
-A library called Firmata allows the Arduino to communicate with the software on the laptop.
-
-
-!Before!
-The tools used in this project is Pure data and Arduino. 
-Pure data is a C/C++ based coding language which utilises pre-constructed blocks of code which have to be connected to one another. Pure data is the code implemented in our project which is responsible for the audio and image processing. Gem is used for the image processing purpose, which is a library in Pura data that allows for various image processing and animation methods.  
-Furthermore three different filters have been constructed and implemented using pure data.
-
-An Arduino is a micro controller that allows the user to code and create their own circuits using various components, this allows for a wide range of purposes. In this project the Arudino is responsible for the physical interface which the user has available. 
+Pure Data is a visual data flow programming language \cite{puredata} written in C, which is designed for processing audio signals. Pure Data programs, called patches, are written using blocks that represent variable definitions, methods, or other patches. These blocks have inlets and outlets that are then connected to each other to determine the flow of data through the program. Two third party libraries are used with Pure Data; Pduino, which is used to interface with the Arduino, and Gem which adds image processing capabilities to Pure Data. The Firmata firmware is loaded unto the Arduino to enable the Pduino library to communicate with the Arduino.
 
 \subsection{Audio filters}\label{sub:audiofilters}
 In the domain of audio effects, the term "filters" describes effects that modify the partial amplitudes of audio signals according to their frequencies \cite{zolzer2011dafx}. Filters combine their input signal with delayed and modified versions of themselves and then filters out certain frequencies. If a delayed version of the input signal is added to the signal, it is called a feedfoward filter, and if the signal is added to a delayed version of itself, it is called a feedback filter. This makes feedback filters more tricky to work with, since their effects can essentially amplify themselves \cite{steiglitz1997digital}. In this case the amplification can continue forever, no matter if you feed the filter a new input signal or not. This continuous amplification is called an unstable filter. Inversely, a stable filter is one, where the response fades over time, tending towards zero. This way you make sure that the response of the input signal will end, depending on how fast the response signal fades.

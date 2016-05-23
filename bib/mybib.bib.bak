@@ -35,13 +35,6 @@ year = {Januar 2013},
   year =   {1992}
 }
 
-@Misc{Nederland2016,
-  author = {Advanced Solutions Nederland},
-  title =  {Designing and implementing biquad IIR filters with the ASN Filter Designer: a tutorial review},
-  month =  feb,
-  year =   {2016}
-}
-
 @Article{Norman:1999:ACD:301153.301168,
   author     = {Norman, Donald A.},
   title      = {Affordance, Conventions, and Design},
@@ -106,4 +99,30 @@ year = {Januar 2013},
   volume    = {1},
 }
 
+@Article{Norman:1999:ACD:301153.301168,
+  author     = {Norman, Donald A.},
+  title      = {Affordance, Conventions, and Design},
+  journal    = {interactions},
+  year       = {1999},
+  volume     = {6},
+  number     = {3},
+  pages      = {38--43},
+  month      = may,
+  acmid      = {301168},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/301153.301168},
+  issn       = {1072-5520},
+  issue_date = {May/June 1999},
+  numpages   = {6},
+  publisher  = {ACM},
+  url        = {http://doi.acm.org/10.1145/301153.301168},
+}
+
+@Misc{puredata,
+  author       = {{Pure Data}},
+  title        = {Pure Data},
+  howpublished = {https://puredata.info/},
+}
+
 @comment{jabref-meta: databaseType:bibtex;}
+
