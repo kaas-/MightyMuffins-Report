@@ -38,12 +38,12 @@ As the if-statements process the data, a set of sliders have been placed to visu
 \end{figure}
 
 \section{Arduino code}
-For the Arduino a \texttt{pd arduino} patch has been created, which contains all the objects for the arduino part of the code. It takes a number and a list of 5 numbers as inputs. The first single number defines which of the computer's serial ports will be used to access the Arduino. The list of numbers defines which analogue inlets are open and which are closed. Each inlet is associated with a position in the list, and the number determines whether a given inlet is active; 1 for active and 0 for inactive. This information is sent to the \texttt{pduino/arduino} object.
+For the Arduino a \texttt{pd arduino} patch has been created, which contains all the objects for the Arduino part of the code. It takes a number and a list of 5 numbers as inputs. The first single number defines which of the computer's serial ports will be used to access the Arduino. The list of numbers defines which analogue inlets are open and which are closed. Each inlet is associated with a position in the list, and the number determines whether a given inlet is active; 1 for active and 0 for inactive. This information is sent to the \texttt{pduino/arduino} object.
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{Arduino_normalization}
-\caption{The arduino blocks for inputs and outputs.}
+\caption{The Arduino blocks for inputs and outputs.}
 \label{Fig:Arudino_normalization}
 \end{figure}
 
