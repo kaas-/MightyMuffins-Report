@@ -82,6 +82,7 @@ The high-shelf filter works by changing the amplitude of all frequencies that is
 
 \section{Software tools}\label{sec:softwareTools}
 	\subsection{Image processing}\label{sub:imageprocessing}
+	\todo{A lot of this does not belong here - it's code overview stuff}
 	As the project revolves around pictures being audiolised, various image processing methods have been implemented. To get an image loaded into Pure data the library gem have been imported and applied. In gem it is possible to go through each pixel getting its RGB value as three different values. This is done using a double nested for-loop that is constructed using the expr function in Pure data, which allows for construction of consecutive if-statements. The first if-statement gives an output that is increased by 0.001 for every cycle if the input value is less than one. The second if-statement checks if the input value is greater or equal to one, if that is the case it adds 0.01 to a value starting at zero, which is then outputted. The last if-statement checks if the second input is greater or equal to 1, if that is the case subtract 1 from the value of the second input.
 	
 	Pipe is an object that delay the input given to it by a specific amount of milliseconds. It is used here to make sure that the program does not give a stack overflow error, and that it doesn't process the pixels too fast. By default in the program the pipe is set to 50 milliseconds since this allows the program to smoothly go through each pixel one by one. 
