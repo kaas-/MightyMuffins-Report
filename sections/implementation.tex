@@ -25,7 +25,7 @@ Filters can be put into three basic categories:
 
 The filters used in the project is a bandpass, comb and high-shelf.
 
-The comb filter used is a simple feedback filter, of the structure seen in Figure \ref{fig:feedback}. The summation of the delays creates constructive and destructive interference on the signal. This interference is at regular intervals, which gives the curve of the frequency response its distinct appearance, as seen in Figure \ref{fig:comb}. It is used to give an echo-like effect unto the input signal. For the implementation of this filter, the delay coefficient was chosen as the variable coefficient. It was chosen because it was the coefficient with the most effect compared to the filter gain, and thus giving the user a better chance of hearing the change in sound.
+The comb filter used is a simple feedback filter, of the structure seen in Figure \ref{fig:feedback}. The summation of the delays creates constructive and destructive interference on the signal. This interference is at regular intervals, which gives the curve of the frequency response its distinct appearance, as seen in Figure \ref{fig:comb}. It is used to give an echo-like effect unto the input signal.
 
 \begin{figure}
 \centering
@@ -62,7 +62,7 @@ Direct Form 2 is better when working with floating points \cite{Redmon2003}. Thi
 
 Because of this, the coefficients \(a_1\) and \(a_2\) are actually inversed, compared to the normal definition.
 
-The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected \cite{zolzer2011dafx}. To give the user a way of altering the filter, the frequency coefficient was made variable, which allowed the user to change which frequencies are rejected. 
+The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected \cite{zolzer2011dafx}.
 
 \begin{figure}
 \centering
@@ -71,7 +71,7 @@ The bandpass filter works by letting certain frequencies pass through, while rej
 \label{fig:bandpass}
 \end{figure}
 
-The high-shelf filter works by changing the amplitude of all frequencies that is higher than a defined threshold frequency. The amplitude change can be positive or negative, depending on the decibel gain defined by the filter coefficients\cite{zolzer2011dafx}. An example of the frequency response of a high-shelf filter can be seen in Figure \ref{fig:highshelf}. The coefficient altered in this filter, is the gain coefficient because it was the coefficient with the most effect, compared to the slope and frequency. 
+The high-shelf filter works by changing the amplitude of all frequencies that is higher than a defined threshold frequency. The amplitude change can be positive or negative, depending on the decibel gain defined by the filter coefficients\cite{zolzer2011dafx}. An example of the frequency response of a high-shelf filter can be seen in Figure .
 
 \begin{figure}
 \centering
@@ -82,7 +82,6 @@ The high-shelf filter works by changing the amplitude of all frequencies that is
 
 \section{Software tools}\label{sec:softwareTools}
 	\subsection{Image processing}\label{sub:imageprocessing}
-	\todo{A lot of this does not belong here - it's code overview stuff}
 	As the project revolves around pictures being audiolised, various image processing methods have been implemented. To get an image loaded into Pure data the library gem have been imported and applied. In gem it is possible to go through each pixel getting its RGB value as three different values. This is done using a double nested for-loop that is constructed using the expr function in Pure data, which allows for construction of consecutive if-statements. The first if-statement gives an output that is increased by 0.001 for every cycle if the input value is less than one. The second if-statement checks if the input value is greater or equal to one, if that is the case it adds 0.01 to a value starting at zero, which is then outputted. The last if-statement checks if the second input is greater or equal to 1, if that is the case subtract 1 from the value of the second input.
 	
 	Pipe is an object that delay the input given to it by a specific amount of milliseconds. It is used here to make sure that the program does not give a stack overflow error, and that it doesn't process the pixels too fast. By default in the program the pipe is set to 50 milliseconds since this allows the program to smoothly go through each pixel one by one. 
@@ -93,7 +92,7 @@ The high-shelf filter works by changing the amplitude of all frequencies that is
 	
 	\subsection{Arduino}\label{sub:arduino}
 	Arduino is a micro controller with open source software, that allows for custom coding in processing. Arduino has the capability to be connected to a breadboard for greater utility as the breadboard allows multiple components to be connected to a single Ardunio port, making it possible to create a 5 volt circuit using only a single pin. It is also possible to create a circuit using more than one pin, giving access to greater utility as each pin can be programmed separately in the program, giving each of the pins a unique functionality or making them become a duplicate, this would allow each pin to run a different circuit.
-	Arduino is used in the project as the main control unit, as it is connects the physical interface to pure data. 
+	Arduino is used in the project as the main control unit, as it is connects the physical interface to Pure Data. 
 	
 \section{Physical interface}\label{sec:physicalinterface}
 
