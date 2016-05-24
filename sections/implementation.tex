@@ -30,7 +30,7 @@ The comb filter used is a simple feedback filter, of the structure seen in Figur
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{comb}
-\caption{Frequency response curve of comb filter.}
+\caption{Frequency response curve of a comb filter.}
 \label{fig:comb}
 \end{figure}
 
@@ -62,16 +62,23 @@ Direct Form 2 is better when working with floating points \cite{Redmon2003}. Thi
 
 Because of this, the coefficients \(a_1\) and \(a_2\) are actually inversed, compared to the normal definition.
 
-The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected.
+The bandpass filter works by letting certain frequencies pass through, while rejecting all other frequencies. The accepted frequencies are defined by having a band with width \(B\) and a frequency \(f_0\) as its  centre point. This structure can be seen in Figure \ref{fig:bandpass}. The outermost points of the band \(f_L\) and \(f_H\) define the lowest and highest frequencies that are passed through, respectively. All frequencies lower than \(f_L\) and higher than \(f_H\) are rejected \cite{zolzer2011dafx}.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{bandpass}
-\caption{Frequency response curve of bandpass filter.}
+\caption{Frequency response curve of a bandpass filter.}
 \label{fig:bandpass}
 \end{figure}
 
+The high-shelf filter works by changing the amplitude of all frequencies that is higher than a defined threshold frequency. The amplitude change can be positive or negative, depending on the decibel gain defined by the filter coefficients\cite{zolzer2011dafx}. An example of the frequency response of a high-shelf filter can be seen in Figure .
 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{highshelf}
+\caption{Frequency response curve of a high-shelf filter.}
+\label{fig:highshelf}
+\end{figure}
 
 \section{Software tools}\label{sec:softwareTools}
 	\subsection{Image processing}\label{sub:imageprocessing}
