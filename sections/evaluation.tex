@@ -21,9 +21,7 @@ Possible Interview questions
 \item Any other thoughts?
 \end{itemize}
 
-
 The test set up was planned to be held in a quiet area with one test participant at the time, located at Rendensburgade (The Create building) it was planned to conduct the test on at least 12 people (2 test people pr. group member) 
-
 
 Technical evaluation 
 
@@ -77,7 +75,6 @@ Questions:
 \end{itemize}
 
 
-
 /* Now we will change the images to Asgar Jorn */
 \begin{itemize}
 \item Do you hear the difference between the two pictures?
@@ -90,7 +87,6 @@ Questions:
 Any other overall thoughts?
 
 \section{Evaluation results}
-
 
 Comb filter results
 
@@ -172,16 +168,16 @@ No &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \textbf{0} \\ \hline
 
 
 \section{Results analysis}
-This section describes the results found in the final test. The results were found by making a semi-structured interview and getting qualitative feedback by communicating directly with the user, using the script shown above. 
 
-From the testing, 13 of the participants found it difficult to hear the difference between "MIN" and "MAX" when manipulating with the comb filter on both Mona Lisa and Asger Jorns picture. However, when using the Bandpass and High shelf, the user could hear a clear difference between the two filters when changing the values using the sliders. Two of the test participants had no clear comments regarding the difference between any of the filters. These answers was marked as "not clear for use" in case the test facilitator and secretary had misunderstood the participant's answer. 
+This section contains the analysis of the test results. The analysis methods are outlined and then used. 
 
-Nine of the participants did not know the terms of the different filters, but they could distinguish a change in the output when manipulating with the sliders. Therefore, they did not know exactly what to listen for when manipulating with the sliders. Six of the participants from Medialogy knew the terms of the three filters. Even though six of the participants knew the terms of the filters, only two knew exactly what the filters did, and what they had to listen for when manipulating with the sliders. 
+%The results were found by making a semi-structured interview and getting qualitative feedback by communicating directly with the user, using the script shown above.
 
-The interface was clear for all the participants and they knew how to use it, either by looking at the help text or at the sliders. None of the test participants had any trouble manipulating with the sliders. 
+For statistical analysis of quantitative data, Fisher's exact test is used to determine whether there is a connection between explanatory variables and their contingencies. This test is specifically concerned with the influence the two different images have on our results. Binomial tests are used to determine the significance of our results. An significance value $\alpha$ of 0.05 is used.
 
-All of the participants could hear a clear difference between the colourful Asger Jorn painting and the darker Mona Lisa painting. They all suspected the difference in the colours for being the reason for the difference in the sound. 
+The product must be able to audiolise the image. For this criteria to be fulfilled, individual images must produce audio that is distinct. The user test shows that images produce a unique sound. This can be seen in the fact that all test participants could hear a clear difference between the colourful Asger Jorn painting and the darker Mona Lisa painting ($p=6.104e-5$). 
 
-To sum up the overall thoughts on the product, the test participants found the device to be very easy to use, even though most of them did not know what the filters actually did or what the names of the filters meant. 
+The effects that are applied to this audiolisation must be alterable by the user. The technical test shows that the audio filters are applied as desired - the filter responses match what is expected from the respective types of filter. There is an underlying assumption to this criteria that this effect must be discernable by the user, otherwise there is no point to it. Using Fisher's exact test it is first determined whether the image has an influence on whether the user can hear the effect. There is no significant correlation between the image used and the users ability to hear the affect for any of the filters ($p_{comb}=1$, $p_{bandpass}=0.6513$, $p_{highshelf}=1$). Then we determine whether users can hear a difference between a filter being a applied or not applied. Users determined that they could hear the bandpass filter ($p=0.001431$) and the high shelf filter ($p=1.863e-09$). They also determined they could NOT hear the comb filter ($p=8.43e-06$).
 
-\todo {One particpant was asking if the later iteration would show the context between the picture and sound to find a balanced and satisfying output}. 
+Finally the product must be usable. The interface was clear for all the participants and they knew how to use it, either by looking at the help text or at the sliders. None of the test participants had any trouble manipulating with the sliders. Nine of the participants did not know the terms of the different filters, but they could distinguish a change in the output when manipulating with the sliders. However, all users found the help text helpful. This indicates that the principle of using text labels to explain certain elements of this kind of interface is sound, but that the current implementation of this is problematic. The biggest issue here is probably that the labels make use of technical language which only provides useful information for expert users.
+ 
